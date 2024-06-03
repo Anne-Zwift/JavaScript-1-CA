@@ -17,29 +17,21 @@
     <script src="https://kit.fontawesome.com/d3e1febfe2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="./index.html">
-      <img src="./Images/Img-logo.png" alt="logo of Rainydays with the text pushing the comfort zone" class="logo">
-      </a>
-    <div class="nav-container">
-    <div class="icons">
+      <img src="./Images/Img-logo.png" alt="logo of Rainydays with the text pushing the comfort zone" class="logo-nav"></a>
+      <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
+      <label for="hamburger-menu" class="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
       <i class="fa-solid fa-cart-shopping"></i>
       <i class="fa-solid fa-magnifying-glass"></i>
-    <form action="/search">
-      <input class="search-field" type="text" id="search-field" placeholder="search ..">
-      <label for="search-field"></label>
-    </form>
-      <input type="checkbox" id="hamburger-menu">
-      <label for="hamburger-menu" class="hamburger-menu"><i class="fa-solid fa-bars"></i></label>     
-    <nav>
-      <a href="./index.html" title="this is a link to the home page">Home</a>
-      <a href="./List-of-Jackets.html" title="this is a link to the site for products" class="active">Women's</a>
-      <a href="./List-of-Jackets.html" title="this is a link to the site for products" class="active">Men's</a>
-      <a href="./About.html" title="this is a link to the site about us">About</a>
-      <a href="./Contact.html" title="this is a link to the contact page">Contact</a>
-    </nav>
-    </div>
-    </div>
+      <nav>
+        <a href="./List-of-Jackets.html" title="products">Women's</a>
+        <a href="./List-of-Jackets.html" title="products">Men's</a>
+      </nav>
+      <form action="/search">
+        <input class="search-field" type="text" name="type in your search request" id="search-field" placeholder="search ..">
+        <label for="search-field"></label>
+      </form>
     </header>
     <main>
       <div>
@@ -80,21 +72,19 @@
       </div>
       <div class="bg_color-grey"></div>
       <div class="jackets-container-two">
-      <div class="div-container2">
-        <a href="./Jacket-Specific.html">
-        <img class="img-jacket4" src="./Images/img-rainydaysJacket4.png" alt="">
-        <p>Our thinnest waterproof jacket.</p>
-        <p>1498 NOK</p>
+        <div class="div-container2">
+          <a href="./Jacket-Specific.html">
+          <img  class="img-jacket4" src="./Images/img-rainydaysJacket4.png" alt="">
+          <p>Our lightest, most packable waterproof jacket.</p>
+          <p>1498 NOK</p>
         </a>
-      </div>
+        </div>
       <div class="div-container2">
         <a href="./Jacket-Specific.html">
         <img  class="img-jacket3" src="./Images/img-rainydaysJacket3.png" alt="">
-      <div>
         <p>Our lightest, most packable waterproof jacket.</p>
         <p>1299 NOK</p>
-      </div>
-        </a>
+      </a>
       </div>
       <div class="div-container2">
         <a href="./Jacket-Specific.html">
@@ -107,46 +97,55 @@
         <p>Pushing</p>
         <p>the</p>
         <p>Comfort Zone</p>
-      <div>
         <img class="img-logo" src="./Images/Img-logo.png" alt="">
       </div>
-      </div>    
-      </div>  
+      </div>      
       <div class="bg_color-blue"></div>      
     </main>
-    <footer>
-      <section class="flex-container-footer">
-        <img src="./Images/Img-logo.png" alt="" class="logo-footer">
-        <div>
-          <h3>We use a Gore-Tex® face fabric, the world leading membrane for highly durable waterproofness.</h3>
-        </div>
-      </section>
-      <div class="wrapper">
-        <a href="#" class="active-footer">Quick links</a>
-        <a href="./index.html" class="quick-links">Home</a>
-        <a href="./About.html" class="quick-links">About</a>
-        <a href="./Contact.html" class="quick-links">Contact</a>
-      </div>
-      <div class="wrapper">
-        <a href="#" class="active-footer">Company</a>
-        <a href="./About.html" class="quick-links">About</a>
-        <a href="./Contact.html" class="quick-links">Contact</a>
-        <a href="#" class="quick-links">Press</a>
-      </div>
-      <div class="wrapper">
-        <a href="#" class="active-footer">Information</a>    
-        <a href="#" class="quick-links">Privacy Policy</a> 
-        <a href="#" class="quick-links">Terms & Condition</a>
-        <a href="#" class="quick-links">FAQ</a>
-      </div>
-    <div class="--icons">
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-    </div>         
-      <div class="Copyright">
-        <p>Copyright &copy;2021 <img src="./Images/Logo_images/favicon-16x16.png" alt="Rainydays logo"> All Rights Reserved</p>
-      </div>
-    </footer>
+    <div class="up"></div>
+    <a href="./List-of-Jackets.html" title="up"><i class="fa-solid fa-arrow-up"></i></a>
+<footer class="footer">
+<div>
+  <a href="./index.html" title="home page">
+  <img src="./Images/Img-logo.png" alt="Rainydays" class="logo"></a>
+</div>
+<aside>
+  <a href="./contact.html" title="contact us site">
+  <p><b>Visit</b></p></a>
+  <div class="visit">
+      <p>RAINYDAYS</p>
+      <p>Kjelsåsveien 143</p>
+      <p>0491 Oslo</p>
+  </div>
+</aside>
+<aside>
+  <a href="./contact.html" title="contact us site">
+  <p><b>Customer service</b></p></a>
+<div class="opening-hours">
+  <p><i>Hours</i></p>
+  <p>Monday: Closed</p>
+  <p>Tuesday: 10:00 – 16:00</p>
+  <p>Wednesday: 10:00 – 16:00</p>
+  <p>Thursday: 10:00 – 16:00</p>
+  <p>Friday: 10:00 – 19:00</p>
+  <p>Saturday: 9:00 – 16:00</p>
+  <p>Sunday: 9:00 – 13:00</p>            
+</div>
+</aside>
+<aside>
+<div class="caption">     
+  <a href="./privacy-policy.html" title="privacy policy site">Privacy Policy</a>
+  <a href="./terms-conditions.html" title="terms & conditions site">Terms & Conditions</a>
+  <a href="#" title="contact us site">Contact Us</a>
+  <a href="#" title="products women">Our products</a>
+</div>
+<div class="icon">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+</div>
+</aside>
+<div class="copyright">&copy; 2024 Rainydays</div>
+</footer>
   </body>
 </html>
   

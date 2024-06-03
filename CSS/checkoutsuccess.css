@@ -1,177 +1,100 @@
-header {
-    display: flex;
-    align-items: center;
-}
-
 h1 {
     text-transform: uppercase;
-    font-size: 1rem;
-    margin: 0px;
-}
-
-h6 {
-    font-size: 0.4rem;
-    float: left;
-    max-width: 50%;
-    margin-top: 0px;
-    margin-left: 20px;
+    font-size: 24px;
+    padding-top: 30px;
 }
 
 .Checkout-Success {
-    display: block;
+    background-color: #17e1e138;
+    margin-top: 100px;
     text-align: center;
-    margin-left: 30%;
-    margin-top: 10px;
+    padding-bottom: 20px;
 }
 
 .fa-circle-check {
+    float: none;
     color: #0a3641;
-    line-height: 1.5;
-    font-size: 1rem;
+    font-size: 24px;
+    margin-top: 0px;
 }
 
 .flex-container {
     display: flex;
-    font-size: 0.5em;
-    line-height: 1.5;
-    color: #0a3641;
-    background-color: #ffffff;
-    border: 2px solid #d9d9d9;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    background-color: #0a36413c;
+    margin-top: 0px;
 }
 
 .flex-container-div {
     text-align: left;
+    margin-left: 20px;
 }
 
 .sale {
     color: #e71111;
-    line-height: 1;
-    font-size: 0.4rem;
-    font-weight: bold;
 }
 
 .img-jacket {
-    float: left;
-    max-width: 40%;
-}
-
-.img-tent {
-    display: flex;
-    width: 85%;
-    margin: 20px;
-    margin-bottom: 40px;
+    max-width: 50%;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .button-continue {
     background-color: #0a3641;
     color: #ffffff;
-    text-decoration: none;
-    font-size: 0.5em;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-bottom: 20px;
+    padding: 10px 55px;
+    margin-left: 20px;
+}
+
+.button-continue1 {
+    margin-top: 40px;
+}
+
+.img-tent {
+    display: flex;
+    width: 85%;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 400px) {
 
-.button-continue {
-    margin-left: 20px;
-}
-
-h6 {
-    font-size: 0.5rem;
-    float: left;
-    max-width: 57%;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 0px;
-}
-
-.sale {
-    font-size: 0.55rem;
+.flex-container-div p {
+    width: 300px;
 }
 
 }
 
 @media (min-width: 600px) {
 
-.fa-circle-check {
-    font-size: 1.2rem;
-}
-
-.Checkout-Success {
-    margin-left: 40%;
-}
-
 .button-continue {
     padding: 10px 80px;
-}
-
-h6 {
-    max-width: 40%;
-}
-
-.img-jacket {
-    max-width: 150px;
 }
 
 }
 
 @media (min-width: 800px) {
-  
-h1 {
-    font-size: 0.7rem;
-}
-
-h6 {
-    font-size: 0.4rem;
-}
-
-.sale {
-    font-size: 0.4rem;
-}
-
-fieldset {
-    max-width: 330px;
-}
 
 .Checkout-Success {
-    line-height: 2;
-    margin-left: 35%;
+    margin-top: 140px;
+    margin-left: 100px;
+    width: 600px;
 }
 
-.fa-circle-check {
-    font-size: 1rem;
-}
-
-.img-jacket {
-    max-width: 80px;
-}
-
-.img-tent {
-    float: inline-end;
-    max-width: 50%;
-    margin-top: -380px;
-}
-
-.flex-container-tent {
-    margin-bottom: 60px;
+.flex-container {
+    width: 600px;
+    margin-left: 100px;
 }
 
 .button-continue {
-    font-size: 0.6rem;
-    margin-left: 30px;
+    margin-left: 100px;
 }
-
-}
-
-@media (min-width: 900px) {
 
 .img-tent {
-    max-width: 46%;
+    max-width: 70%;
+    margin-left: 100px;
 }
 
 }
@@ -179,53 +102,7 @@ fieldset {
 @media (min-width: 1000px) {
 
 .img-tent {
-    max-width: 42%;
-}
-
-fieldset {
-    max-width: 420px;
-}
-
-.button-continue {
-    margin-left: 60px;
-}
-
-}
-
-@media (min-width: 1100px) {
-
-h1 {
-    font-size: 1.2rem;
-}
-
-h6 {
-    font-size: 0.6rem;
-    font-weight: 400;
-}
-
-.sale {
-    font-size: 0.6rem;
-}
-
-.fa-circle-check {
-    font-size: 1.4rem;
-}
-
-.img-jacket {
-    width: 200px;
-}
-
-.img-tent {
-    max-width: 44%;
-    margin-top: -420px;
-}
-    
-fieldset {
-    max-width: 500px;
-}
-
-.button-continue {
-    margin-left: 100px;
+    width: 55%;
 }
 
 }
@@ -233,51 +110,23 @@ fieldset {
 @media (min-width: 1200px) {
 
 .img-tent {
-    max-width: 40%;
-}
-
-fieldset {
-    max-width: 600px;
-}
-
-.button-continue {
-    margin-left: 140px;
+    max-width: 50%;
 }
 
 }
 
 @media (min-width: 1300px) {
 
-.flex-container-tent {
-    margin-bottom: 120px;
-}
-    
-fieldset {
-    max-width: 700px;
-}
-    
-.button-continue {
-    margin-left: 160px;
+.img-tent {
+    width: 45%;
 }
 
 }
-@media (min-width: 1400px) {
+
+@media (min-width: 1600px) {
 
 .img-tent {
-    max-width: 30%;
-    margin-right: 0px;
-}
-  
-.flex-container-tent {
-    margin-bottom: 140px;
-}
-
-fieldset {
-    margin-left: 200px;
-}
-
-.button-continue {
-    margin-left: 400px;
+    width: 37%;
 }
 
 }

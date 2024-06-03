@@ -1,50 +1,44 @@
-header {
-  display: flex;
-  align-items: center;
-}
-
 h1 {
   text-transform: uppercase;
-  font-size: 0.8rem;
-  text-align: center;
-  margin-top: 40px;
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 40px;
 }
 
 .bg_color-grey {
   background-color: #d9d9d9;
   padding: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .bg_color-blue {
   background-color: #b0ccd3;
   padding: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.sale {
-  font-size: 0.7rem;
+/*sale {
   background-color: #fff;
   color: #e71111;
   font-weight: bolder;
+  padding: 5px;
+  border-radius: 4px;
 }
+*/
 
 .jackets-container-one {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 0.7rem;
-  padding-top: 0px;
-  text-align: center;
 }
 
 .div-container {
-  width: 180px;
   text-align: center;
-  padding: 1em;
+  padding-top: 20px;
   background-color: #d9d9d9;
-  border: 10px solid #fff;
 }
 
 .div-container a {
@@ -52,12 +46,14 @@ h1 {
   color: black;
 }
 
+.div-container p {
+  width: 220px;
+}
+
 .div-container2 {
-  width: 180px;
   text-align: center;
-  padding: 1em;
+  padding-top: 20px;
   background-color: #b0ccd3;
-  border: 10px solid #fff;
 }
 
 .div-container2 a {
@@ -65,28 +61,36 @@ h1 {
   color: black;
 }
 
+.div-container2 p {
+  width: 220px;
+}
+
 .img-jacket2 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .img-jacket5 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .img-jacket6 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .img-jacket7 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .jackets-container-two {
@@ -94,35 +98,35 @@ h1 {
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 0.7rem;
-  padding-top: 0px;
-  text-align: center;
 }
 
 .img-jacket1 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .img-jacket3 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .img-jacket4 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .logo-text {
-  width: 180px;
+  width: 220px;
   text-align: center;
-  padding: 1em;
   background-color: #b0ccd3;
-  border: 10px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .img-logo {
@@ -131,44 +135,181 @@ h1 {
   max-width: 100%;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
+
+h1 {
+  padding-top: 60px;
+  margin-left: 120px;
+}
+
+}
+
+@media (min-width: 700px) {
+
+h1 {
+margin-left: 140px;
+}
 
 .div-container {
-  width: 30%;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.div-container p {
+  width: 150px;
+  height: 80px;
+}
+
+.img-jacket6 {
+  width: 80%;
+}
+
+.img-jacket2 {
+  width: 80%;
+}
+
+.img-jacket5 {
+  width: 80%;
+}
+
+.img-jacket7 {
+  width: 80%;
 }
 
 .div-container2 {
-  width: 30%;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.div-container2 p {
+  width: 150px;
+  height: 80px;
+}
+
+.img-jacket4 {
+  width: 80%;
+}
+
+.img-jacket3 {
+  width: 80%;
+}
+
+.img-jacket1 {
+  width: 80%;
 }
 
 .logo-text {
-  width: 30%;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.img-logo {
+  width: 80%;
 }
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
+
+h1 {
+  margin-top: 140px;
+  margin-left: 30px;
+}
+  
+.div-container {
+  width: 200px;
+}
+  
+.div-container p {
+  margin-left: 20px;
+}
+  
+.div-container2 {
+  width: 200px;
+}
+  
+.div-container2 p {
+  margin-left: 20px;
+}
+  
+.logo-text {
+  width: 200px;
+}
+   
+}
+
+@media (min-width: 1000px) {
+
+h1 {
+  margin-left: 120px;
+}
+
+}
+
+@media (min-width: 1100px) {
+
+h1 {
+  text-align: center;
+}
 
 .jackets-container-one {
-  gap: 0px;
-  flex-wrap: nowrap;
+  gap: 2px;
+}
+
+.div-container {
+  width: 240px;
+}
+  
+.div-container p {
+  margin-left: 40px;
 }
 
 .jackets-container-two {
-  gap: 0px;
-  flex-wrap: nowrap;
-}
-
-.div-container {
-  width: 50%;
+  gap: 2px;
 }
 
 .div-container2 {
-  width: 50%;
+  width: 240px;
 }
-
+  
+.div-container2 p {
+  margin-left: 40px;
+}
+  
 .logo-text {
-  width: 50%;
+  width: 240px;
 }
 
+}
+
+@media (min-width: 1300px) {
+
+main {
+  background-color: #d9d9d978;
+}
+
+h1 {
+  text-align: center;
+}
+
+.div-container {
+  width: 280px;
+}
+    
+.div-container p {
+  margin-left: 60px;
+}
+    
+.div-container2 {
+  width: 280px;
+}
+    
+.div-container2 p {
+  margin-left: 60px;
+}
+    
+.logo-text {
+  width: 280px;
+}
+  
 }

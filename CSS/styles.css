@@ -1,428 +1,333 @@
+/*common fonts and buttons*/
 html {
-    background-color: #ffffff;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-size: 0.6rem;
-    background-color: #DEF3F8;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: #fff;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
 }
 
 h1 {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
     color: #0a3641;
-    font-size: 1.2em;
+    font-size: 33px;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 0.7em; 
-    margin: 30px; 
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
 }
 
-/* h3 is footer text*/
 h3 {
-    width: 120px;
-    font-size: 0.5rem; 
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     font-weight: 400;
+    font-style: normal;  
+}
+
+.caption {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #6C6E70;
     margin-top: 20px;
-    margin-left: 15px;   
+    margin-bottom: 20px;
 }
 
-.logo {
-    block-size: 4vh; 
-    margin-left: 10px;
-    margin-right: 10px;
+.copyright {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.nav-container {
-    margin-left: 90px;
-    margin-right: 0px;
+/*nav starts here*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: #f2f4f5;
+    margin-top: -100px;
 }
 
-.icons {
-    display: flex;
-}
-
-.fa-solid {
-    padding-left: 15px;
-    padding-right: 5px;
+.logo-nav {
+    block-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 nav {
     display: none;
     position: absolute;
-    background-color: #DEF3F8;
-    top: 75px;
-    z-index: 1000;
+    margin-top: -15px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    text-align: left;
+    background-color: #f2f4f5;
+    width: 100%;
 }
 
 nav a {
-    display: inline-flex;
-    color: #0A3641;
+    display: block;
     text-decoration: none;
-    padding: 5px 6px;
-    font-size: 0.5rem;
+    color: #47494a;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 nav a:hover {
-    color: #18ed0c;
-    text-decoration: underline;
-    transition-delay: all 3s;
+    color: #6C6E70;
 }
 
-/*color for header Women's and Men's*/
-.active {
-    text-decoration: none;
-    color: #000077;
-    font-size: 0.5rem;
-}
+/*.hamburger-menu {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+}*/
 
 #hamburger-menu {
     display: none;
 }
 
 #hamburger-menu:checked ~ nav {
-    display: block;     
+    display: block;
 }
 
-input[type=text] {
-    width: 40%;
-    font-size: 0.5em;
-    padding: 2px;
-    box-sizing: border-box;
-    border: 1px solid #bfb6b6;
-    border-radius: 3px;
-    background-color: #ffffff;
+.fa-solid {
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
 }
 
 .search-field {
     display: none;
 }
 
-/*Footer*/
-footer {
-    background-color: #DEF3F8;
-    color:#0a3641;
-    font-size: 0.5rem; 
+/*arrow to top starts here*/
+.up {
+    width: 100%;
+    background: #fff no-repeat;
+    background-size: cover;
 }
 
-.flex-container-footer {
-    display: flex;
+.fa-arrow-up {
+    position: fixed;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    width: 20px;
+    height: 40px;
+    background: #cfcfd0;
+    border-radius: 10%;
+    bottom: 20px;
+    right: 10px;
+    line-height: 10px;
+    text-decoration: none;
+}
+
+.fa-arrow-up:hover {
+    background: #B0CCD3;
+    line-height: 40px;
+    transition-duration: 4ms;
+}
+
+/*footer starts here*/
+.logo {
+    block-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #f2f4f5;
+    text-align: center;
     margin-top: 20px;
 }
 
-/*This is for quick links in the footer*/
-.active-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 0.5rem;
-    text-decoration:none;
-    font-weight: bold;
-    color: #000077;
-    margin-left: 10px;
+b {
+    color: #000;
 }
 
-/*this makes the color green and underline disappear*/
-.quick-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 0.5rem;
-    text-decoration:none;
-    color: #0a3641;
-    margin-left: 10px;
+a {
+    text-decoration: none;
 }
 
-.logo-footer {
-    block-size: 4vh; 
-    padding-top: 20px;
-    padding-left: 20px;
+b:hover {
+    color: #6C6E70;
 }
 
-/*icon facebook and instagram*/
-.--icons {
-    color: #0A3641;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-bottom: 20px;
+.visit p {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
 
-.wrapper {
-    display: inline-block;
-    padding-top: 20px;  
+.opening-hours p {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
 
-/*this is the copyright section, the logo needs fixing*/
-.Copyright {
-    background-color: #bfb6b6;
-    text-align: left;
-    padding: 10px 10px;
+.caption a {
+    color: #47494a;
+}
+
+.caption a:hover {
+    color: #000;
+    font-size: larger;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    background-color: #e8e9ea;
+    color: #000;
+    padding: 20px;
 }
 
 @media (min-width: 375px) {
 
+.logo-nav {
+    block-size: 50px;
+    margin-right: 80px;
+}
+
+/*footer*/
 .logo {
-    block-size: 6vh;
+    block-size: 50px;
 }
 
-.nav-container {
-    margin-left: 140px;
 }
 
-/*This is for quick links in the footer*/
-.active-footer {
-    margin-left: 20px;
-}
+@media (min-width: 400px) {
     
-.quick-links {
-    margin-left: 20px;
-}
-
-.logo-footer {
-    block-size: 6vh; 
-    margin-right: 10px;
-}
-
-.--icons {
-    font-size: 0.7rem;
-    margin-left: 10px;
-}
-
-.Copyright {
-    text-align: center;
+.logo-nav {
+    margin-right: 120px;
 }
 
 }
 
 @media (min-width: 450px) {
     
-.nav-container {
-    margin-left: 210px;
+.logo-nav {
+    margin-left: 50px;
+    margin-right: 160px;
 }
-
-.fa-solid {
-    font-size: 0.6rem;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.Copyright {
-    font-size: 0.6rem;
-}
-
-h3 {
-    width: 250px;
-    font-size: 0.6rem;
-    font-weight: 400;
-}
-
+    
 }
 
 @media (min-width: 600px) {
 
-.nav-container {
-    display: flex;
-    flex-direction: row-reverse;
+.logo-nav {
+    margin-right: 0px;
     margin-left: 20px;
 }
-
-.active {
-    font-size: 0.6rem;
-    padding-left: 5px;
-    padding-right: 5px;
+         
+nav {
+    display: flex;
+    float: right;
+    width: 100px;
+    gap: 15px;
+    background-color: #dbacac00;
+    padding: 20px;
+    margin-left: 150px;
+    margin-top: -60px;
 }
 
-nav {
-    display: block;
-    position: static;
+nav a {
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 0px;
+    margin-top: -15px;
 }
 
 .hamburger-menu {
     display: none;
 }
 
-nav a {
-    display: inline-block;
-    font-size: 0.6rem;
-    padding-left: 5px;
-    padding-right: 5px;
-}
+/*.search-field {
+}*/
 
-.icons {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-left: 40px;
-}
-
-.fa-solid {
-    padding-top: 6px;
-}
-
-/*footer*/
-
-.flex-container-footer {
-    display: block;
-}
-
-/*This is for quick links in the footer*/
-.active-footer {
-    font-size: 0.6rem;
-}
-    
-/*this makes the color green and underline disappear*/
-.quick-links {
-    font-size: 0.6rem;
-}
-
-.Copyright {
-    text-align: left;
-}
-
-}
-
-@media (min-width: 680px) {
-
-.nav-container {
-    margin-left: 50px;
-}
-
-.fa-solid {
-    padding-top: 8px;
-    padding-left: 25px;
+.copyright {
+    font-size: 16px;
 }
 
 }
 
 @media (min-width: 800px) {
-
-.logo {
-    block-size: 7vh;
-    margin-left: 20px;
-    margin-right: 40px;
+header {
+    margin-top: -140px;
 }
 
-.nav-container {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.search-field {
-    display: flex;
-    margin-top: 4px;    
-}
-
-.fa-solid {
-    padding-top: 8px;
-    padding-left: 0px;
-    margin-left: 0px;
-}
-
-.icons {
-padding-left: 10px;
-margin-left: 0px;
-}
-
-.search-field {
-    margin-left: 20px;
-}
-
-input[type=text] {
-    width: 80%;
-    padding: 5px 10px;
-    box-sizing: border-box;
-    font-size: 0.5rem;
-}
-
-/*footer*/
-.logo-footer {
-    block-size: 7vh;
-    margin-left: 20px;
-}
-
-h3 {
-    float: inline-start;
-    color: #0A3641;
-    font-weight: 400;
+.logo-nav {
+    block-size: 70px;
     margin-left: 40px;
 }
 
-/*This is for quick links in the footer*/
-.active-footer {
-    font-weight: 600;
-    line-height: 1.5;
-    padding-left: 40px;
-    margin-top: -150px;
-    margin-left: 20px;
-}
-    
-/*this makes the color green and underline disappear*/
-.quick-links {
-    font-size: 0.5rem;
-    font-weight: 400;
-    padding-left: 40px;
-    margin-left: 20px;
-}
-
-.--icons {
-    padding-top: 0px;
-    margin-left: 30px;
-}
-
-}
-
-@media (min-width: 1000px) {
-
-.nav-container {
-    margin-left: 140px;
-}
-
-.active {
-    font-size: 0.7rem;
-}
-
 nav a {
-    font-size: 0.7rem;
+    margin-top: -25px;
 }
 
 .fa-solid {
-    font-size: 0.7rem;
+    margin-top: 50px;
+    margin-right: 40px;
 }
 
+/*.search-field {
+    display: flex;
+    margin-top: 4px;    
+}*/
+
+/*footer*/
+.footer {
+    text-align: left;
 }
 
-@media (min-width: 1200px) {
-
-.nav-container {
-    margin-left: 120px;
+.logo {
+    block-size: 70px;
+    margin-left: 20px;
 }
 
-nav a {
-    padding-right: 30px;
+b {
+    margin-left: 20px;
 }
 
-.active {
-    padding-right: 30px;
+.visit p {
+    margin-left: 20px;
 }
 
-.fa-solid {
-    padding-left: 20px;
-    padding-right: 20px;
+.opening-hours p {
+    margin-left: 20px;
 }
 
+.caption {
+    text-align: center;
+    margin-top: 40px;
 }
 
-@media (min-width: 1300px) {
+.icon {
+    margin-left: 20px;
+    margin-top: -40px;
+}
 
-.nav-container {
-    margin-left: 20%;
-}    
+.copyright {
+    text-align: center;
+    font-size: 16px;
+}
 
 }

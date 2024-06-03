@@ -1,22 +1,8 @@
-header {
-    display: flex;
-    align-items: center;
-}
-
-main {
-    display: inline-block;
-}
-
 h1 {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 20px;
     text-align: center;
-    margin-top: 40px;
-}
-
-h2 {
-    font-size: 0.8rem;
-    margin: 10px;    
+    margin-top: 100px;
 }
 
 .jacket-specific-container {
@@ -42,10 +28,9 @@ h2 {
 .container-product-information {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 0.7rem;
     padding-top: 0px;
     text-align: center;
     color: #0a3641;
@@ -65,25 +50,25 @@ h2 {
 .sale {
     color: #E71111;
     font-weight: bolder;
-    font-size: 0.7rem;
     text-align: center;
 }
 
 @media (min-width: 600px) {
 
+h1 {
+    padding-top: 100px;
+}
+
 .jacket-specific-container {
     float: left;
     width: 50%;
-}
-
-.container-product-information {
-    float: left;
-    width: 50%;
+    margin-top: 40px;
 }
 
 .container-product-information {
     text-align: left;
     padding-top: 20px;
+    margin-bottom: 200px;
 }
 
 .sale {
@@ -100,15 +85,40 @@ h2 {
 @media (min-width: 680px) {
 
 .container-product-information {
-    max-width: 450px;
+    width: 300px;
 }
     
 }
 
+@media (min-width: 800px) {
+
+header {
+    margin-top: -100px;
+}
+
+}
+
 @media (min-width: 1000px) {
 
-main {
-    margin-left: 25%;
+.jacket-specific-container {
+    width: 300px;
+    margin-left: 20%;
 }
-        
+
+}
+
+@media (min-width: 1400px) {
+    
+.jacket-specific-container {
+    margin-left: 28%;
+}
+
+}
+
+@media (min-width: 1900px) {
+
+.jacket-specific-container {
+    margin-left: 33%;
+}
+
 }
