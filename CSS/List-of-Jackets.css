@@ -1,5 +1,6 @@
 h1 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 20px;
   margin-top: 100px;
   margin-left: 40px;
@@ -139,16 +140,11 @@ h1 {
 
 h1 {
   padding-top: 60px;
-  margin-left: 120px;
 }
 
 }
 
 @media (min-width: 700px) {
-
-h1 {
-margin-left: 140px;
-}
 
 .div-container {
   width: 150px;
@@ -238,19 +234,7 @@ h1 {
    
 }
 
-@media (min-width: 1000px) {
-
-h1 {
-  margin-left: 120px;
-}
-
-}
-
 @media (min-width: 1100px) {
-
-h1 {
-  text-align: center;
-}
 
 .jackets-container-one {
   gap: 2px;
@@ -286,10 +270,6 @@ h1 {
 
 main {
   background-color: #d9d9d978;
-}
-
-h1 {
-  text-align: center;
 }
 
 .div-container {
