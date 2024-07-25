@@ -53,15 +53,15 @@
             <p>Sunday:13-21</p>
           </div>
         </div>
-        <form action="./Contact.html" id="register">
+        <form action="./Contact.html" id="register" name="contact">
         <fieldset>
           <h2>Your Contact Details</h2>
           <label for="email" class="text-products">Mail</label>
-          <input class="form-input" placeholder="name@example.com" type="email" id="email" name="email" required>
-          <label for="first-name" class="text-products">First name</label>
-          <input placeholder="First name" type="text" id="first-name" name="first-name" class="form-input">
-          <label for="surname" class="text-products">Surname</label>
-          <input placeholder="Surname" type="text" id="surname" name="surname" class="form-input">
+          <input class="form-input" placeholder="name@example.com" type="email" id="email" name="email" required value="">
+          <label for="firstName" class="text-products">First Name</label>
+          <input placeholder="First name" type="text" id="firstName" name="firstName" class="form-input" required minlength="3" value="">
+          <label for="lastName" class="text-products">Last Name</label>
+          <input placeholder="Last Name" type="text" id="lastName" name="lastName" class="form-input" required minlength="3" value="">
           <label for="phone" class="text-products">Phone number</label>
           <input placeholder="Phone number" type="tel" id="phone" name="phone" class="form-input">
           <label for="category-number" class="text-products">Category specific</label>
@@ -74,6 +74,7 @@
         </fieldset>
         <fieldset>
           <h2>Message</h2>
+          <label for="message"></label>
           <textarea placeholder="Type your message" id="message" name="message" class="form-input"></textarea>
           <div>
             <button class="submit-button">Submit</button>
@@ -114,5 +115,7 @@
         <p>Copyright &copy;2021 <img src="./Images/Logo_images/favicon-16x16.png" alt="Rainydays logo"> All Rights Reserved</p>
       </div>
     </footer>
+
+    <script src="/js/contact.js"></script>
   </body>
 </html>
