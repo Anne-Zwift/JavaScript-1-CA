@@ -29,3 +29,4 @@ for (var i = 0; i < rainydaysSlogan.length; i++) {
     containerAlignText.innerHTML = containerAlignText.innerHTML + "<h1>" + "<h2>" + item.headline + " " + item.summary + "</h1>" + "</h2>";
 
 }
+
