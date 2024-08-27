@@ -32,3 +32,6 @@ document.forms.contact.addEventListener('submit', (event) => {
     // Log the JSON object to the console
     alert(JSON.stringify(json, null, 2));
   });*/
+
+  alert('checking your connection');
+  
