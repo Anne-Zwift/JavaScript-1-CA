@@ -2,7 +2,7 @@
 # HTML & CSS Course Assignmenthttps://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13112324&assignment_repo_type=AssignmentRepo)
 
 # JavaScript 1 - Course Assignment
-Forfaller 17. november 2024 kl. 22:59
+Forfaller 3. november 2024 kl. 22:59
 
 
 ### Brief
