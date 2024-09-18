@@ -1,3 +1,4 @@
+/*Real site begins here*/
 .background-picture-mountain {
     background-image: url("../Images/Img-mountain.png");
     background-size: cover;
@@ -12,6 +13,11 @@
     padding-top: 20px;
     margin-top: 100px;
     margin-bottom: 20px;
+}
+
+/*slogan is part of js*/
+.slogan {
+    color: #0a3641;
 }
 
 .cta-button {

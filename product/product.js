@@ -45,8 +45,10 @@ function displayData(data) {
         </div>
         <p class="product-name">${product.title}</p>
         <div class="detail">
+            <p class="description">${product.description}</p>
             <p class="price">${product.price}</p>
-            <a href="#">View detail</a>
+            <p class="sizes">${product.sizes}</p>
+            
         </div>
     </div>
         `;

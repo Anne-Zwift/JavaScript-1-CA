@@ -1,5 +1,6 @@
 //fetching API Link: https://v2.api.noroff.dev/rainy-days
-const productsContainer = document.querySelector(".products-container");
+const productsContainer = document.querySelector(".all-products");
+const spinner = document.querySelector("#loading");
 console.log(productsContainer);//checking if I have the products-container
 
 const API_link = "https://v2.api.noroff.dev/rainy-days";
@@ -37,22 +38,28 @@ function displayData(data) {
     data.forEach((product) => {
         const productTemplate = `
     
-    <div class="products-container">
-        <div class="product">
-        <div class="product-image">
-        <img src="${product.image.url}" alt="">
-        </div>
-        <p class="product-name">${product.title}</p>
-        <div class="detail">
-            <p class="price">${product.price}</p>
-            <a href="#">View detail</a>
-        </div>
+    <div class="all-products">
+
+  <div id="loading"></div>
+  <div class="product">
+  <div class="product-image">
+    <img src="${product.image.url}" alt="">
+  </div>
+    <p class="product-name">${product.title}</p>
+    <div class="detail">
+      <p class="price">${product.price}</p>
+     
     </div>
+
+</div>
+</div>
+
         `;
     spinner.style.display = "none";
     productsContainer.insertAdjacentHTML('beforeend', productTemplate);
     });
 }
+
 
 //cta button 
 /*const btnEl = document.querySelector('.btn');
