@@ -1,0 +1,40 @@
+/*this css items must be adjusted to finish fit site*/
+/*I leave it be to continue JS pages*/
+
+#body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products-container {
+  min-height: 500px;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  place-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.product-image img{
+  width: 200px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+

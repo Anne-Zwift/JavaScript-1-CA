@@ -6,6 +6,7 @@
     <meta name="description" content="Rainydays is a website for the sale of quality jackets for all kinds of weather. We are world-leading in the use of Gore-Tex for highly durable waterproofness.">
     <title>Rainydays jacket | Home</title>
     <link href="CSS/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <link href="CSS/home.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
@@ -15,11 +16,11 @@
     <link rel="icon" type="image/png" sizes="512x512" href="Images/Logo_images/android-chrome-512x512.png">
     <link rel="icon" type="image/x-icon" href="/Images/Logo_images/favicon.ico">
     <script src="https://kit.fontawesome.com/d3e1febfe2.js" crossorigin="anonymous"></script>
-    <!--to ensure that the jQuery is properly loaded (like this sign $)-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="/index.js" defer></script>
   </head>
   <body>
-   <header class="header">
+   <!--<header class="header">
     <a href="./index.html">
     <img src="./Images/Img-logo.png" alt="logo of Rainydays with the text pushing the comfort zone" class="logo-nav"></a>
     <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
@@ -34,18 +35,43 @@
       <input class="search-field" type="text" name="type in your search request" id="search-field" placeholder="search ..">
       <label for="search-field"></label>
     </form>
-  </header>
-    <main>
+  </header>-->
+    <!--<main>
       <section class="background-picture-mountain">
         <div class="container-align-text">
-          <script src="/index.js"></script>
-       <!---- <h1>Pushing the Comfort Zone</h1>
-        <h2>Plan your next adventure with RAINYDAYS</h2> 
-        --->
+          <div class="slogan">
+            h1 and h2 is cowered by js and home.css
+            <h1 class="slogan">Pushing the Comfort Zone</h1>
+            <h2>Plan your next adventure with RAINYDAYS</h2>
+          </div>
         <a href="./List-of-Jackets.html" title="this is a link to the site for new arrivals" class="cta-button">Shop New Arrivals</a>
         </div>
-      </section>
-      <section class="flex-container" >
+      </section>-->
+
+<!--below is testing and will be removed-->
+<!--<div id="" class="jackets">Welcome!</div><br>
+<div id=""><br>
+<button class="btn" style="background: lightskyblue; font-size: 36px;">New Arrivals</button>
+<span>The Women's Rainy Days Thunderbolt jacket is a sleek and stylish waterproof jacket perfect for any outdoor adventure.</span>
+</div>-->
+
+<!--keeping, this belongs to the function displayData(data)-->
+<div class="products-container">
+  <div id="loading"></div>
+  <div class="product">
+  <div class="product-image">
+    <img src="" alt="">
+  </div>
+    <p class="product-name"></p>
+    <div class="detail">
+      <p class="price"></p>
+      <a></a>
+    </div>
+  </div>
+</div>
+
+
+<!--      <section class="flex-container" >
         <div class="flex-container-div">
           <a href="./List-of-Jackets.html">
           <img src="./Images/img-rainydaysJacket1.png" alt="our most versatile down jacket" class="img-flex1">
@@ -99,9 +125,10 @@
         <div class="images-container">
           <img src="./Images/guy-is-standing-frozen-lake200px.png" alt="guy is standing by the frozen lake" class="img-active-people">
         </div>
-      </div>
-    </main>
-    <div class="up"></div>
+      </div> 
+    </main>-->
+   
+    <!--<div class="up"></div>
             <a href="./index.html" title="up"><i class="fa-solid fa-arrow-up"></i></a>
     <footer class="footer">
       <div>
@@ -144,6 +171,6 @@
       </div>
      </aside>
       <div class="copyright">&copy; 2024 Rainydays</div>
-  </footer>
+  </footer>-->
   </body>
 </html>
