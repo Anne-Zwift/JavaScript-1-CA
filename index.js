@@ -48,7 +48,7 @@ function displayData(data) {
     <p class="product-name">${product.title}</p>
     <div class="detail">
       <p class="price">${product.price}</p>
-     
+     <a href="/product/index.html?id=${product.id}">View detail</a>
     </div>
 
 </div>

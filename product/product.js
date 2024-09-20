@@ -1,21 +1,33 @@
+//spinner
+const spinner = document.querySelector("#loading");
+
 //display data: set up HTML skeleton for displaying data
-const productsContainer = document.querySelector(".products-container");
-console.log(productsContainer);//checking if I have the products-container
+const singleProductsContainer = document.querySelector(".single-products-container");
+console.log(singleProductsContainer);//checking if I have the products-container
+
+
+//fetching the API all product link
+//const API_Single_Product = `https://v2.api.noroff.dev/rainy-days/?id`;
+
+//const API_Single_Product = "https://v2.api.noroff.dev/rainy-days/id";
+
 
 //fetching the API single product link
-const API_Single_Product = "https://v2.api.noroff.dev/rainy-days";
+const API_Single_Product = "https://v2.api.noroff.dev/rainy-days/b8b528fc-6c60-41f6-a5a9-9a8b27a9482a";
 
 
-
-async function fetchData() {
+async function fetchDataSingleProduct() {
 
     try {
         
-        //fetching the data
-        const response = await fetch(API_Single_Product);
-        console.log(response);//status 200/ok
+       //spinner - see if it works in 3G
+        spinner.style.display = 'inline-block';
+         //fetching the data
+        //const productId = new URLSearchParams(window.location.search).get("id");//fetching the web browser id not in use
+        const response = await fetch(API_Single_Product);//(specifics: I need to use id after rainy-days, I can then fetch every viewed jacket
+        //console.log(response);//status 200/ok
         const data = await response.json();//convert it back to js and save it in to data
-        console.log(data);
+        //console.log(data);//fetching a single jacket
 
         if (!response.ok) {
             console.log("something went wrong");
@@ -23,6 +35,8 @@ async function fetchData() {
 
         //display data
         displayData(data.data);
+        console.log(data.data);
+        
         
         
 
@@ -30,29 +44,33 @@ async function fetchData() {
         console.log(error);
     }
 }
-fetchData();
+fetchDataSingleProduct();
 
 //create a function for a single product
 
 function displayData(data) {
-    data.forEach((product) => {
-        const productTemplate = `
+  
+  singleProductsContainer.innerHTML = `
     
-    <div class="products-container">
-        <div class="product">
-        <div class="product-image">
-        <img src="${product.image.url}" alt="">
-        </div>
-        <p class="product-name">${product.title}</p>
-        <div class="detail">
-            <p class="description">${product.description}</p>
-            <p class="price">${product.price}</p>
-            <p class="sizes">${product.sizes}</p>
-            
-        </div>
+    <div class="single-products-container">
+  <div id="loading"></div>
+    <div class="product">
+    <div class="product-image">
+      <img src="${data.image.url}" alt="">
     </div>
+      <p class="product-name">${data.title}</p>
+      <div class="detail">
+        <div><p class="description">${data.description}</p></div><br>
+        <div><p class="price">${data.price}</p></div><br>
+        <div><p class="sizes">${data.sizes}</p></div>
+        <div><p class="gender">${data.gender}</p></div>
+      </div>
+    </div>
+  </div>
+   
         `;
-        
-    productsContainer.insertAdjacentHTML('beforeend', productTemplate);
-    });
+
+    spinner.style.display = 'none';
+    singleProductsContainer.innerHTML();
+
 }
