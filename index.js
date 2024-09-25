@@ -3,7 +3,12 @@ const productsContainer = document.querySelector(".all-products");
 const spinner = document.querySelector("#loading");
 //console.log(productsContainer);//checking if I have the products-container
 const cartCount = document.querySelector("#cartCount");
-
+//initialize the cart array
+const storedCartItems = JSON.parse(localStorage.getItem("cart"));
+//this gets the cart items in local storage and keeps it in the cart
+let cart = storedCartItems ? storedCartItems: [];
+cartCount.textContent = cart.length;
+console.log(cart);
 
 const API_link = "https://v2.api.noroff.dev/rainy-days";
 
@@ -42,6 +47,14 @@ async function fetchData() {
                 const product = Object.values(data.data).find((product) => product.id == productId);
                 console.log(product);
                 console.log(Array.isArray(data.data));
+                cart.push(product);
+                //update the cart count
+                cartCount.textContent = cart.length;
+                //add items to the local storage
+                localStorage.setItem("cart", JSON.stringify(cart));
+                //show notification
+                showNotification("Product Added to Cart");
+                //console.log(JSON.stringify(cart));
             });
         });
 
@@ -76,6 +89,18 @@ function displayData(data) {
     productsContainer.insertAdjacentHTML('beforeend', productTemplate);
     });
 }
+
+function showNotification(message) {
+    const note = document.querySelector(".note");
+    note.textContent = message;
+    note.style.left = "10px";
+    setTimeout(() => {
+        note.style.left = "-300px";
+    }, 3000)
+}
+
+
+
 
 /*const button = document.querySelector('#female-btn');
 

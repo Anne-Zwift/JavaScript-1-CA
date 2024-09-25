@@ -8,7 +8,7 @@
 }
 
 .cart-link {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   padding: 1rem 3rem;
@@ -34,5 +34,16 @@
 
 .cart-item {
   max-width: 60%;
-  
+}
+
+.note {
+  position: fixed;
+  margin: auto;
+  top: 100px;
+  left: -300px;
+  background-color: #1bd8cf;
+  border-radius: 5px;
+  padding: 3rem 3rem;
+  max-width: 60%;
+  transition: all 0.5s ease-in-out;
 }
