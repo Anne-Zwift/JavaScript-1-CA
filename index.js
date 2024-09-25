@@ -36,10 +36,12 @@ async function fetchData() {
         addToCartBtns.forEach((btn) => {
            //console.log(btn);
             btn.addEventListener('click', (event) => {
-                const productId = +event.target.dataset.id;
-                const product = +data.find((product) => product.id == productId);
+                const productId = event.target.dataset.id;
+                //tested if it was an Array (console.log(Array.isArray(data) is false, but data.data is true)
+                //use find method to find the specific item 
+                const product = Object.values(data.data).find((product) => product.id == productId);
                 console.log(product);
-
+                console.log(Array.isArray(data.data));
             });
         });
 
