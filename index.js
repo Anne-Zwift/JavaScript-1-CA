@@ -1,7 +1,9 @@
 //fetching API Link: https://v2.api.noroff.dev/rainy-days
 const productsContainer = document.querySelector(".all-products");
 const spinner = document.querySelector("#loading");
-console.log(productsContainer);//checking if I have the products-container
+//console.log(productsContainer);//checking if I have the products-container
+const cartCount = document.querySelector("#cartCount");
+
 
 const API_link = "https://v2.api.noroff.dev/rainy-days";
 
@@ -26,7 +28,20 @@ async function fetchData() {
         console.log(data.data);//fetching the image pic link in item 1
         displayData(data.data);
     
-        
+        //Add to cart functionality
+        //select all Cart Buttons
+        const addToCartBtns = document.querySelectorAll(".add-to-cart");
+        //console.log(addToCartBtns);//shows the NodeList of 12 buttons
+        //loop thru the btns
+        addToCartBtns.forEach((btn) => {
+           //console.log(btn);
+            btn.addEventListener('click', (event) => {
+                const productId = +event.target.dataset.id;
+                const product = +data.find((product) => product.id == productId);
+                console.log(product);
+
+            });
+        });
 
     } catch (error) {
         console.log(error);
@@ -50,7 +65,7 @@ function displayData(data) {
       <p class="price">${product.price}</p>
      <a href="/product/index.html?id=${product.id}">View details</a>
     </div>
-
+    <button data-id=${product.id} class="add-to-cart">Add to Cart</button>
 </div>
 </div>
 
@@ -60,14 +75,53 @@ function displayData(data) {
     });
 }
 
+/*const button = document.querySelector('#female-btn');
+
+const items = [
+    { name: 'female', gender: 'Female' },
+    { name: 'male', gender: 'Male' },
+];
+
+function sortByGender() {
+    items.sort((a, b) => a.gender.localeCompare(b.gender));
+    console.log(a,b);
+}
+
+document.getElementsByClassName('female-btn').addEventListener('click', sortByGender);*/
+
 
 //cta button 
-/*const btnEl = document.querySelector('.btn');
+/*const btnEl = document.querySelector('.female-btn');
     const clickHandler = () => {
-    console.log(data.data[1].description);
+    console.log(data.data[0].gender);
     }
-    btnEl.addEventListener('click', clickHandler);
-*/
+    btnEl.addEventListener('click', clickHandler);*/
+
+
+
+
+//trying out 
+/*const processData = (data) => {
+    console.log(processData);
+    const genderData = {
+        male: 0,
+        female: 0,
+    };
+
+    data.forEach(item => {
+        if (item.gender === 'male') {
+            genderData.male++;
+        }else if (item.gender === 'female') {
+            genderData.female++;
+        }
+
+    });
+
+    return genderData;
+};*/
+
+
+
 
 //testing what works below
 /*const optionsOfJackets = ['title', 'price', 'description'];

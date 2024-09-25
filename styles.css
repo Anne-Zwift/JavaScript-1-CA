@@ -67,4 +67,18 @@
   }
 }
 
+.add-to-cart,
+.delete-btn {
+  padding: 1rem 3rem;
+  background-color: black;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+}
 
+.delete-btn {
+  background-color: tomato;
+}
