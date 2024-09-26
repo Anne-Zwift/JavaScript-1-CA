@@ -8,8 +8,8 @@
 }
 
 .single-products-container {
-  min-height: 500px;
-  background-color: antiquewhite;
+  min-height: 100vh;
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   place-items: center;
@@ -29,13 +29,47 @@
 }
 
 .product-image img{
-  width: 200px;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
 }
 
 .detail {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.product-name {
+  font-size: 24px;
+  width: 350px;
+  margin-left: 100px;
+}
+
+.description {
+  width: 400px;
+  font-size: 24px;
+  margin-top: -250px;
+  margin-left: 200px;
+}
+
+.price {
+  font-size: 20px;
+  margin-top: 260px;
+  margin-top: -100px;
+  margin-left: -340px;
+}
+
+.sizes {
+  font-size: 20px;
+  margin-top: -160px;
+  margin-left: -440px;
+}
+
+.gender {
+  font-size: 20px;
+  margin-top: 460px;
+  margin-left: -430px;
 }
 
 #loading {
