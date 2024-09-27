@@ -36,8 +36,8 @@
 
 .price {
   font-size: 20px;
-  margin-top: -60px;
-  margin-left: 20px;
+  margin-top: -80px;
+  margin-left: 40px;
 }
 
 .product-image img{
@@ -100,3 +100,20 @@
   background-color: tomato;
 }
 
+.note {
+  position: fixed;
+  margin: auto;
+  top: 100px;
+  left: -300px;
+  background-color: #1bd8cf;
+  border-radius: 5px;
+  padding: 3rem 3rem;
+  max-width: 60%;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width:768px) {
+  .cart-item {
+    max-width: 100%;
+  }
+}
