@@ -82,3 +82,9 @@
 .price {
   margin-left: 20px;
 }
+
+.checkout-link {
+  width: 5px 10px;
+  color: black;
+  margin-left: 160px;
+}
