@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rainydays is a website for the sale of quality jackets for all kinds of weather. We are world-leading in the use of Gore-Tex for highly durable waterproofness.">
     <title>Rainydays jacket | Checkout-Success</title>
-    <link href="/CSS/styles.css" rel="stylesheet">
-    <link href="/CSS/checkoutsuccess.css" rel="stylesheet">
     <link rel="stylesheet" href="confirmation.css">
-    <link rel="stylesheet" href="/checkout/cart.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/checkoutsuccess.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -17,8 +16,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="Images/Logo_images/android-chrome-512x512.png">
     <link rel="icon" type="image/x-icon" href="/Images/Logo_images/favicon.ico">
     <script src="https://kit.fontawesome.com/d3e1febfe2.js" crossorigin="anonymous"></script>
-
-    <script src="/checkout/confirmation/confirmation.js"></script>
+    <script src="confirmation.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -26,11 +24,13 @@
       <img src="/Images/Img-logo.png" alt="logo of Rainydays with the text pushing the comfort zone" class="logo-nav"></a>
       <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
       <label for="hamburger-menu" class="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
-      <i class="fa-solid fa-cart-shopping"></i>
-      <i class="fa-solid fa-magnifying-glass"></i>
+      <!-- <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-magnifying-glass"></i> -->
       <nav>
         <a href="./List-of-Jackets.html" title="products">Women's</a>
         <a href="./List-of-Jackets.html" title="products">Men's</a>
+        <h2 class="shopping-cart">Shopping cart( <span id="cartCount">0</span>)</h2><!--contain the counter of adding items to cart -->
+        <a href="/">Go back to shopping</a>
       </nav>
       <form action="/search">
         <input class="search-field" type="text" name="type in your search request" id="search-field" placeholder="search ..">
@@ -42,19 +42,19 @@
           <h1>Success</h1>
           <i class="fa-solid fa-circle-check"></i>
         </div>
-        <!--Cart page-->
-  <div class="note">The message will be here</div>
+  <!--Cart page-->
+  <!-- <div class="note">The message will be here</div> -->
   <div class="cart-page">
     <div class="cart-header">
-      <h2>Shopping cart( <span id="cartCount">0</span>)</h2><!--contain the counter of adding items to cart -->
-      <a href="/">Continue Shopping</a>
+      
+      <!-- <a href="/checkout/confirmation/index.html" class="checkout-link">Checkout Confirmation</a> -->
     </div>
     <div class="cart">
       <div class="cart-items">
         <div class="cart-item">
           <div class="left">
             <img
-              src="#"
+              src=""
               alt=""
             />
             <p class="product-name">Mens Casual Premium Slim Fit T-Shirts</p>
@@ -67,7 +67,7 @@
         <div class="cart-item">
           <div class="left">
             <img
-              src="#"
+              src=""
               alt=""
             />
             <p class="product-name">Mens Casual Premium Slim Fit T-Shirts</p>
@@ -80,28 +80,9 @@
       </div>
     </div>
   </div>
-        <!-- <section class="flex-container">
-          <div class="flex-container-div">
-            <img class="img-jacket" src="/Images/img-rainydaysJacket6.png" alt="our warmest and softest waterproof ski/snowboard jacket">
-            <p>Our warmest and softest waterproof ski/snowboard jacket.</p>
-            <p class="sale">50 % off today only</p>
-            <p>1895,00 NOK</p>
-          </div>
-        </section>
-        <section class="flex-container">
-          <div class="flex-container-div">
-            <img class="img-jacket" src="/Images/img-rainydaysJacket3.png" alt="our lightest, packable waterproof jacket">
-            <p>Our lightest, packable waterproof jacket.</p>
-            <p>1299,00 NOK</p>
-          </div>
-        </section>
-        <div class="button-continue1">
-          <a href="./List-of-Jackets.html" class="button-continue">Continue Shopping</a>  
-        </div>    
-        <img class="img-tent" src="/Images/img-tent.png" alt="person in a tent enjoying the mountain view">
-    </main> -->
-    <div class="up"></div>
-            <a href="./Checkout-Success.html" title="up"><i class="fa-solid fa-arrow-up"></i></a>
+    </main>
+  <div class="up"></div>
+            <a href="./index.html" title="up"><i class="fa-solid fa-arrow-up"></i></a>
     <footer class="footer">
       <div>
           <a href="/index.html" title="home page">

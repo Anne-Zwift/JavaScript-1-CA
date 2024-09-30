@@ -1,10 +1,84 @@
+/*nav starts here*/
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #f2f4f5;
+  margin-top: -100px;
+}
+
+.logo-nav {
+  block-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  margin-top: -15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  text-align: left;
+  background-color: #f2f4f5;
+  width: 100%;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #47494a;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.shopping-cart {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: #6C6E70;
+}
+
+/*.hamburger-menu {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+}*/
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.fa-solid {
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.search-field {
+  display: none;
+}
+
+
+
+
+
+
+
 #body {
   margin-left: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.cart-header {
+cart-header {
   border-bottom: 1px solid #858484;
   padding: 1rem 3rem;
   background-color: white;
@@ -13,7 +87,7 @@
   justify-content: space-between;
 }
 
-.cart-link {
+cart-link {
   position: fixed;
   top: 50px;
   right: 10px;
@@ -44,18 +118,6 @@
   max-width: 100%;
 }
 
-.note {
-  position: fixed;
-  margin: auto;
-  top: 100px;
-  left: -300px;
-  background-color: #1bd8cf;
-  border-radius: 5px;
-  padding: 3rem 3rem;
-  max-width: 60%;
-  transition: all 0.5s ease-in-out;
-}
-
 .left img{
   width: 70%;
   height: 300px;
@@ -65,18 +127,6 @@
 
 .product-name {
   margin-left: 20px;
-}
-
-.delete-btn {
-  background-color: tomato;
-  padding: 5px 10px;
-  color: #ffffff;
-  font-size: 16px;
-  margin-left: 20px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  border-radius: 1rem;
 }
 
 .price {
