@@ -101,7 +101,7 @@ cart-link {
 }
 
 .cart-page {
-  background-color: rgba(184, 185, 186, 0.303);
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -133,10 +133,50 @@ cart-link {
   margin-left: 20px;
 }
 
-@media (min-width:599px) {
+.delete-btn {
+  margin-left: 20px;
+}
+
+@media (min-width:450px) {
+
+.left img{
+  width: 60%;
+  height: 300px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+  
+.product-name {
+  margin-left: 40px;
+}
+  
+.price {
+  margin-left: 40px;
+}
+  
+.delete-btn {
+  margin-left: 40px;
+}
+
+}
+
+@media (min-width:600px) {
 
 .shopping-cart {
   margin-top: -15px;
 }
 
+.product-name {
+  margin-left: 60px;
 }
+  
+.price {
+  margin-left: 60px;
+}
+  
+.delete-btn {
+  margin-left: 60px;
+}
+
+}
+
