@@ -101,7 +101,7 @@ cart-link {
 }
 
 .cart-page {
-  background-color: aliceblue;
+  background-color: rgba(184, 185, 186, 0.303);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -131,4 +131,12 @@ cart-link {
 
 .price {
   margin-left: 20px;
+}
+
+@media (min-width:599px) {
+
+.shopping-cart {
+  margin-top: -15px;
+}
+
 }
