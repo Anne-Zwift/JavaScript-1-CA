@@ -133,7 +133,8 @@ cart-link {
   margin-left: 20px;
 }
 
-.delete-btn {
+#totalPrice {
+  font-weight: 600;
   margin-left: 20px;
 }
 

@@ -16,6 +16,7 @@ function displayCartItems(cartItems) {
     const itemTemplate = `
 
          <div class="cart-item">
+         <p id="totalPrice"></p>
     <div class="left">
       <img
         src=${cartItem.image.url}
@@ -27,7 +28,7 @@ function displayCartItems(cartItems) {
     </div>
     <button data-id=${cartItem.id} class="delete-btn">Delete</button>
     <div class="right">
-      <p class="price">$${cartItem.price}</p>
+      <p class="price">${cartItem.price}</p>
     </div>
   </div>
     
@@ -36,6 +37,7 @@ function displayCartItems(cartItems) {
     cartItemsContainer.insertAdjacentHTML("beforeend", itemTemplate);
   });
 }
+
 displayCartItems(cart);
 
 //select deletebtns
@@ -67,3 +69,14 @@ function showNotification(message) {
       note.style.left = "-300px";
   }, 3000)
 }
+
+//getting the totalPrice
+let totalPrice = 0;
+let roundPrice = Math.round(totalPrice * 100) / 100;
+  storedCartItems.forEach(item => {
+  
+  totalPrice += item.price;
+  
+});
+console.log('Total Price:', totalPrice);
+document.getElementById('totalPrice').textContent = 'Total Price: ' + totalPrice + ',-.';

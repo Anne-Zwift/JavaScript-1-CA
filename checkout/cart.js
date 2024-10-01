@@ -27,7 +27,7 @@ function displayCartItems(cartItems) {
     </div>
     <button data-id=${cartItem.id} class="delete-btn">Delete</button>
     <div class="right">
-      <p class="price">$${cartItem.price}</p>
+      <p class="price">${cartItem.price}</p>
     </div>
   </div>
     
