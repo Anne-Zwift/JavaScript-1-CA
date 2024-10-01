@@ -35,7 +35,7 @@
 .detail {
   display: flex;
   flex-direction: column;
-  width: 230px;
+  width: 250px;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,7 +43,7 @@
   text-align: center;
   color: #0a3641;
   padding-top: 40px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .product-name {
