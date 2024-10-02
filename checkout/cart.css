@@ -14,20 +14,18 @@
 }
 
 .h2 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .cart-link {
   position: fixed;
-  top: 50px;
+  top: 40px;
   right: 10px;
   padding: 1rem 3rem;
   color: black;
-  background-color: none;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
 }
 
 .cart-page {
