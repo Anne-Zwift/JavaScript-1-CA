@@ -26,7 +26,6 @@ function displayCartItems(cartItems) {
       ${cartItem.title}
       </p>
     </div>
-    
     <div class="right">
       <p class="price">${cartItem.price}</p>
     </div>
