@@ -99,6 +99,172 @@ function showNotification(message) {
     }, 3000)
 }
 
+//filter items by category, gender or genre
+
+//examples
+//Ternary Operators
+/*const age = 25;
+const isEligibleToVote = age >= 18? "Eligible":"Not Eligible";
+console.log(isEligibleToVote);*/
+
+//template literals
+/*const firstName = "Thunderbolt";
+const lastName = "Rainydays";
+const fullName = `${firstName} ${lastName}`;
+console.log(fullName);*/
+
+//destructing (objects and arrays)
+/*const properties = {
+    color: "green",
+    price: 300,
+    size:32
+};
+const {color,price,size} = properties;
+console.log(color,price,size);
+
+const fruits = ["mangoes", "oranges", "grapes"];
+const[mangoes, oranges, grapes] = fruits;
+console.log(mangoes, oranges, grapes);*/
+
+//spread operator
+/*const winterJackets = ["fury", "filled", "waterproof"];
+const summerJackets = ["thin", "long", "short"];
+const jackets = [...winterJackets, ...summerJackets];
+console.log(jackets);*/
+
+//Functions expression
+/*const square = function(num) {
+    return num **2;
+};
+
+function squareNum(num) {
+    console.log(num ** 2);
+    return num **2;  
+};
+console.log(squareNum(3));
+
+//Functions array, => means return
+const multiply = (num1, num2) => {
+    console.log(num1 * num2);
+    
+};
+multiply(2,3);*/
+
+
+//modules export and import
+//export allows us to use the code in another file by there importing
+//export const add = (a,b) => a + b;
+//export const subtract = (a,b) => a - b;
+
+//importing
+//import { add, subtract } from './moduleX'//put in the path
+//console.log(add(5,3));
+//console.log(add(10,4));
+
+/*export default function greet(message) {
+    console.log(message);
+};
+
+//import
+greet("good morning");*/
+
+//Array Methods(Map, find, filter...)
+/*const nums = [1,2,3,4,5,6,7,8];
+const double = nums.map((num, i) => num **2);
+
+
+const found = nums.find((num) => num === 3);
+
+const numbersGreaterThan3 = nums.filter((num) => num > 3);
+console.log(numbersGreaterThan3);*/
+
+//Promises, built in functions then & catch
+//then is for when the task is successful
+//catch is for messaging you the error, failed
+/*fetch('https://fakestoreapi.com/products')
+.then((res) => res.json())
+.then((data) => console.log(data))
+.catch((err) => console.log(err))*/
+
+//More modern method is ASYNC/AWAIT TO FETCH DATA
+/*async function fetchData() {
+    try {
+        const response = fetch('https://fakestoreapi.com/products');
+        const data = (await response).json();
+        console.log(data);
+    } catch (error) {
+        console.log(err)
+    }
+}
+fetchData();*/
+
+
+//Arrays and Objects
+
+//Array slice()
+/*let cars = ["Toyota", "Mercedes", "Opel", "BMW", "Renault"];
+//slicing the array from start to end
+let new_arr = cars.slice(2);
+console.log(new_arr);
+
+let new_arr1 = cars.slice(3, 4);
+console.log(new_arr1);*/
+
+//Array includes()
+//if you wonder if a item is included or not. Returns true/false
+
+/*let cars = ["Toyota", "Mercedes", "Opel", "BMW", "Renault"];
+//checking if cars contains "Opel"
+let check1 = cars.includes("Opel");
+console.log(check1);
+
+let check2 = cars.includes("box");
+console.log(check2);
+
+if (cars.includes("Honda")) {
+    console.log("The car is here");
+    
+}else {
+    cars.push("Honda")
+    console.log(cars);
+};*/
+
+//Splice()=> returns the removed items
+/*let months = ["January", "February", "Monday", "Tuesday"];
+let days = months.splice(2);
+console.log(days);
+
+//tell it to remove x numbers of items. I remove only 1 element Wednesday and keep the rest in the array
+const daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const weekDays = daysOfTheWeek.splice(2,1);
+console.log(weekDays, daysOfTheWeek);*/
+
+
+//Array map()
+/*const numbers = [1,2,3,4];
+const squaredsNums = numbers.map(num => num ** 2);//creates a function and callback
+console.log(squaredsNums);//returns [1,4,9,16]*/
+
+/*const ages = [12,52,27,51,79];
+const yearOfBirth = ages.map(function (age) {
+    return 2024 - age;
+});
+console.log(yearOfBirth);*/
+
+//forEach()
+const prices = [1000, 2000, 3000, 4000, 5000];
+const discountedPrices = prices.forEach(function (price, index) {
+    console.log(price + 0.1 * price);
+       
+});
+
+
+
+
+
+
+
+
 
 
 

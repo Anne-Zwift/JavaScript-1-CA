@@ -48,6 +48,11 @@
   margin-left: 20px;
 }
 
+#totalPrice{
+  font-style: oblique;
+  width: 150px;
+}
+
 .note {
   position: fixed;
   margin: auto;

@@ -16,6 +16,7 @@ function displayCartItems(cartItems) {
     const itemTemplate = `
 
          <div class="cart-item">
+         <p id="totalPrice"></p>
     <div class="left">
       <img
         src=${cartItem.image.url}
@@ -67,3 +68,14 @@ function showNotification(message) {
       note.style.left = "-300px";
   }, 3000)
 }
+
+//getting the totalPrice
+let totalPrice = 0;
+let roundPrice = Math.round(totalPrice * 100) / 100;
+  storedCartItems.forEach(item => {
+  
+  totalPrice += item.price;
+  
+});
+console.log('Total Price:', totalPrice);
+document.getElementById('totalPrice').textContent = 'Total Price: ' + totalPrice + ',-.';
