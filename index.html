@@ -32,16 +32,16 @@
     <a href="/list-of-Jackets.html" class="female-btn" id="female-btn">Women's</a>
     <a href="" class="male-btn" id="male-btn">Men's</a>
     <!--my cart-->
-    <a href="checkout/cart.html" class="cart-link">Cart Items (<span id="cartCount">0</span><i class="fa-solid fa-cart-shopping"></i>)</a>
+    <a href="checkout/cart.html" class="cart-link"><i class="fa-solid fa-cart-shopping">(<span id="cartCount"></span>)</i><span id="cartCount"></span></a>
   </nav> 
     <!-- <nav>
       <a href="./List-of-Jackets.html" title="products" class="female-btn">Women's</a>
       <a href="./List-of-Jackets.html" title="products" class="male-btn">Men's</a>
     </nav> -->
-    <form action="/search">
+    <!--<form action="/search">
       <input class="search-field" type="text" name="type in your search request" id="search-field" placeholder="search ..">
       <label for="search-field"></label>
-    </form>
+    </form>-->
   </header>
     <main>
       <section class="background-picture-mountain">
@@ -64,15 +64,14 @@
 
 
 <!-- filter items by category,gender or genre -->
- <div>
-  <a href="" id="filter" class="filter">Filter items</a>
- </div>
+<a href="/filter.html" class="find-btn">Find your favorite jacket</a>
 
 
 
 
 <!--keeping, this belongs to the function displayData(data)-->
 <div class="all-products">
+  
 <div id="loading"></div>
   <!-- <div class="product">
     <div class="product-image">

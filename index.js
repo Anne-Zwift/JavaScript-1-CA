@@ -101,6 +101,12 @@ function showNotification(message) {
 
 //filter items by category, gender or genre
 
+
+
+
+
+
+
 //examples
 //Ternary Operators
 /*const age = 25;
@@ -258,14 +264,55 @@ const discountedPrices = prices.forEach(function (price, index) {
        
 });
 
+//reduce() method => a single value
+const numbers = [1, 2, 3, 4, 5, 6];
+const totalNumbers = numbers.reduce(function(acc, value) {
+    return acc + value;
+});
+
+console.log(totalNumbers);
 
 
+//filter() method => a selection of chosen elements
+const studentsAges = [22, 19, 18, 32, 52];
+const agesEligibleToVote = studentsAges.filter(function (age) {
+    return age >= 18;
+});
+console.log(agesEligibleToVote);
 
+const citizens = [
+    {
+        name: "John",
+        age: 23,
+        gender: "male",
+        employed: true,
+        married: false,
+    },
+    {
+        name: "Mary",
+        age: 28,
+        gender: "female",
+        employed: true,
+        married: true,
+    },
+    {
+        name: "Mia",
+        age: 29,
+        gender: "female",
+        employed: false,
+        married: false,
+    }
+]
+//console.log(citizens);
+/*const femaleCitizens = citizens.filter(function (citizen) {
+    return citizen.gender === "female";
+});
+console.log(femaleCitizens);*/
 
+//or the arrow =>
+const femaleCitizens = citizens.filter(citizen => citizen.gender === "female");
 
-
-
-
+console.log(femaleCitizens);
 
 
 /*const button = document.querySelector('#female-btn');

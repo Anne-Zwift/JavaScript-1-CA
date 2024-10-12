@@ -80,12 +80,11 @@
   background-color: tomato;
   padding: 5px 10px;
   color: #ffffff;
-  font-size: 16px;
   margin-left: 20px;
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 1rem;
+  border-radius: 10px;
 }
 
 .price {
