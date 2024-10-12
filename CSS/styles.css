@@ -107,6 +107,12 @@ nav a:hover {
 .fa-solid {
     float: right;
     margin-right: 20px;
+    margin-top: 40px;
+}
+
+.fa-cart-shopping{
+    margin-right: 240px;
+    margin-top: 0px;
 }
 
 .search-field {
@@ -283,8 +289,8 @@ nav a {
 }
 
 .fa-solid {
-    margin-top: 50px;
-    margin-right: 40px;
+    margin-top: 5px;
+    margin-right: -140px;
 }
 
 /*.search-field {

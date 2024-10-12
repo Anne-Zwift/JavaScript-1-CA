@@ -3,6 +3,7 @@ const productsContainer = document.querySelector(".all-products");
 const spinner = document.querySelector("#loading");
 //console.log(productsContainer);//checking if I have the products-container
 const cartCount = document.querySelector("#cartCount");
+
 //initialize the cart array
 const storedCartItems = JSON.parse(localStorage.getItem("cart"));
 //this gets the cart items in local storage and keeps it in the cart
@@ -258,7 +259,7 @@ const yearOfBirth = ages.map(function (age) {
 console.log(yearOfBirth);*/
 
 //forEach()
-const prices = [1000, 2000, 3000, 4000, 5000];
+/*const prices = [1000, 2000, 3000, 4000, 5000];
 const discountedPrices = prices.forEach(function (price, index) {
     console.log(price + 0.1 * price);
        
@@ -310,9 +311,9 @@ const citizens = [
 console.log(femaleCitizens);*/
 
 //or the arrow =>
-const femaleCitizens = citizens.filter(citizen => citizen.gender === "female");
+/*const femaleCitizens = citizens.filter(citizen => citizen.gender === "female");
 
-console.log(femaleCitizens);
+console.log(femaleCitizens);*/
 
 
 /*const button = document.querySelector('#female-btn');
