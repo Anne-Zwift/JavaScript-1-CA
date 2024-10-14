@@ -6,24 +6,30 @@
 
 .cart-header {
   border-bottom: 1px solid #858484;
-  padding: 1rem 3rem;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.h2 {
-  font-size: 16px;
+  padding-top: 20px;
+  background-color: #ffffff;
 }
 
 .cart-link {
-  top: 40px;
-  right: 10px;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 14px;
+  display: block;
+  width: fit-content;
+  background-color: rgb(31, 165, 80);
+  margin-bottom: 80px;
+}
+
+a.cart-link {
+  color: #858484;
+  margin-left: 30px;
+}
+
+#checkout-link {
+  display: block;
+  background-color: green;
+  color: #ffffff;
+  width:fit-content;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
 }
 
 .cart-page {
@@ -49,6 +55,7 @@
 #totalPrice{
   font-style: oblique;
   width: 150px;
+  margin-left: 10px;
 }
 
 .note {
@@ -82,16 +89,10 @@
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .price {
-  margin-left: 20px;
-}
-
-.checkout-link {
-  width: 5px 10px;
-  color: black;
   margin-left: 20px;
 }
 
@@ -104,5 +105,5 @@
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 1rem;
+  border-radius: 3px;
 }

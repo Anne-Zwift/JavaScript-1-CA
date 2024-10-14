@@ -38,7 +38,7 @@ let dataFilter = data.data.filter((data) => {
 });
 
   if (dataFilter.length === 0) {
-    display.innerHTML = '<p>No products found</p>';//display message
+    display.innerHTML = '<p class="message">No products found</p>';//display message
   } else {
     let dataHtml = dataFilter.map((object) => {
       const { title, price, baseColor, sizes, image } = object;

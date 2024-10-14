@@ -82,7 +82,7 @@
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .delete-btn {
