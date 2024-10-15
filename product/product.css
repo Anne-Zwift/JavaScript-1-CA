@@ -1,79 +1,52 @@
-/*this css items must be adjusted to finish fit site*/
-/*I leave it be to continue JS pages*/
-
 #body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.single-products-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+.continue-shopping a{
+  color: #216b7d;
+  background-color: #ccc;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: #ffffff;
-  border-radius: 5px;
-  padding: 1rem;
-}
-
-.product-image img{
-  display: block;
-  margin: 0 auto;
-  max-width: 60%;
-}
-
-.detail {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 0px;
+  border: 1px solid #fff;
+  margin-top: 200px;
+  margin-left: 40px;
+  padding: 10px;
+  width: 210px;
   text-align: center;
-  color: #0a3641;
-  padding-top: 40px;
-  margin-left: 0px;
 }
 
 .product-name {
-  font-size: 24px;
-  width: 250px;
+  color: #216b7d;
+  font-weight: 600;
 }
 
 .description {
-  width: 250px;
-  font-size: 24px;
+  color: #216b7d;
 }
 
 .price {
-  font-size: 20px;
+  margin-top: 30px;
 }
 
-.sizes {
-  font-size: 20px;
+.product-image img{
+  max-width: 100%;
+  max-height: 210px;
 }
 
-.gender {
-  color: rgb(11, 113, 19);
-  font-size: 20px;
+.detail {
+  margin-top: 20px;
 }
 
 #loading {
   display: none;
   width: 50px;
   height: 50px;
-  border: 3px solid #B0CCD3;
+  border: 3px solid #216b7d;
   border-radius: 50%;
   border-top-color: #fff;
   animation: spin 1s ease-in-out infinite;

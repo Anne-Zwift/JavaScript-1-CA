@@ -62,7 +62,7 @@ function displayData(data) {
       <div class="detail">
         <div><p class="description">${data.description}</p></div><br>
         <div><p class="price">${data.price}</p></div><br>
-        <div><p class="sizes">${data.sizes}</p></div>
+        <p class="sizes">${data.sizes.join(" ")}</p>
         <div><p class="gender">${data.gender}</p></div>
       </div>
     </div>
