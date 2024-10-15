@@ -5,6 +5,8 @@
 }
 
 .continue-shopping a{
+  display: flex;
+  max-width: 150px;
   color: #216b7d;
   background-color: #ccc;
   text-decoration: none;
