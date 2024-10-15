@@ -7,7 +7,8 @@
     <title>Rainydays jacket | List-of-Jackets</title>
     <link rel="stylesheet" href="/css/List-of-Jackets.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/filter.css">
+    <link rel="stylesheet" href="/styles.css">
+    <!--<link rel="stylesheet" href="/filter.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="Images/Logo_images/android-chrome-512x512.png">
     <link rel="icon" type="image/x-icon" href="/Images/Logo_images/favicon.ico">
     <script src="https://kit.fontawesome.com/d3e1febfe2.js" crossorigin="anonymous"></script>
-    <script src="/filter.mjs" type="module"></script>
+    <script src="/filterJackets.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -29,17 +30,18 @@
       <nav>
         <a href="./List-of-Jackets.html" title="products">Women's</a>
         <a href="./List-of-Jackets.html" title="products">Men's</a>
+        <a href="/index.html">Back to shopping</a>
       </nav>
-      <form action="/search">
+      <!--<form action="/search">
         <input class="search-field" type="text" name="type in your search request" id="search-field" placeholder="search ..">
         <label for="search-field"></label>
-      </form>
+      </form>-->
     </header>
     <main>
       <div>
         <h1>Buy your favorite Rainydays Jacket</h1>
       </div>
-      <input type="text" id="input" placeholder="Search for product color...">
+      <input type="text" id="input" class="input" placeholder="What are you looking for?">
       <button src="/list-of-Jackets.html">Search</button>
         <div id="display-data" class="all-products"></div>
       

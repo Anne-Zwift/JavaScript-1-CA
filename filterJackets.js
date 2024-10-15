@@ -2,7 +2,6 @@ const API_link = "https://v2.api.noroff.dev/rainy-days";
 const display = document.querySelector("#display-data");
 const input = document.querySelector("#input");//grab the element
 
-//async function
 const getData = async() => {
   //response
   const res = await fetch(API_link);//getting the endpoint url
@@ -18,30 +17,38 @@ const getData = async() => {
   return data;
 
 }
-//getData();//call function
+getData();
 
 //making a function and get the data and insert it to the DOM
 const displaySearch = async () => {
   try {
-  let query = input.value;//store the search results
+  let query = input.value.toLowerCase().trim();//store the search results
   console.log("Query::", query);
 
   const data = await getData();
   console.log('API Response:', data.data);
 
 let dataFilter = data.data.filter((data) => {
-  if (query == "") {
-    return data;
-  } else if(data.title && data.title.toLowerCase().includes(query.toLowerCase())) {
-    return data;
+  if (!query) {
+    return true;
+  } else{
+    const titleMatch = data.title && data.title.toLowerCase().includes(query);
+    const baseColorMatch = data.baseColor && data.baseColor.toLowerCase().includes(query);
+    const tagsMatch = data.tags && data.tags.some(tag => tag.toLowerCase().includes(query));
+    const genderMatch = data.gender && new RegExp(`\\b${query}\\b`).test(data.gender.toLowerCase());
+    
+    return titleMatch || baseColorMatch || tagsMatch || genderMatch;
+         
+   
   }
+  
 });
 
   if (dataFilter.length === 0) {
     display.innerHTML = '<p class="message">No products found</p>';//display message
   } else {
     let dataHtml = dataFilter.map((object) => {
-      const { title, price, baseColor, sizes, image } = object;
+      const { title, price, baseColor, sizes, gender, image  } = object;
 
     return `
   <div class="all-products">
@@ -53,7 +60,8 @@ let dataFilter = data.data.filter((data) => {
         <div class="detail">
           <p class="price">${price}</p>
           <p class="base-color">${baseColor}</p>
-          <p class="sizes">${sizes}</p>
+          <p class="sizes">${sizes.join(" ")}</p>
+          <p class="gender">${gender}</p>
         </div>
       </div>
     </div>

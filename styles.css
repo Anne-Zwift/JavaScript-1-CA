@@ -101,6 +101,18 @@
   transition: all 0.5s ease-in-out;
 }
 
+/*filter search, list of jackets page*/
+.input {
+  background-color: #f6e0ac;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.message {
+  color: red;
+  margin-left: 20px;
+}
+
 @media (max-width:768px) {
   .cart-item {
     max-width: 100%;
