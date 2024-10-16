@@ -110,11 +110,6 @@ nav a:hover {
     margin-top: 40px;
 }
 
-.fa-cart-shopping{
-    margin-right: 240px;
-    margin-top: 0px;
-}
-
 .search-field {
     display: none;
 }
@@ -246,7 +241,7 @@ b:hover {
 nav {
     display: flex;
     float: right;
-    width: 100px;
+    width: fit-content;
     gap: 15px;
     background-color: #dbacac00;
     padding: 20px;
@@ -256,9 +251,15 @@ nav {
 
 nav a {
     font-weight: 500;
+    width: fit-content;
     padding-left: 20px;
     padding-right: 0px;
     margin-top: -15px;
+}
+
+/*belongs to page list of jackets*/
+.back-link {
+    width: fit-content;
 }
 
 .hamburger-menu {
@@ -276,7 +277,7 @@ nav a {
 
 @media (min-width: 800px) {
 header {
-    margin-top: -140px;
+    margin-top: -100px;
 }
 
 .logo-nav {
@@ -335,4 +336,10 @@ b {
     font-size: 16px;
 }
 
+}
+
+@media (min-width: 900px) {
+header {
+    margin-top: -140px;
+}
 }

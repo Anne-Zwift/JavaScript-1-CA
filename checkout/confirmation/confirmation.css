@@ -1,136 +1,26 @@
-/*nav starts here*/
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  background-color: #f2f4f5;
-  margin-top: -100px;
-}
-
-.logo-nav {
-  block-size: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-nav {
-  display: none;
-  position: absolute;
-  margin-top: -15px;
-  padding-left: 15px;
-  padding-bottom: 20px;
-  text-align: left;
-  background-color: #f2f4f5;
-  width: 100%;
-}
-
-nav a {
-  display: block;
-  text-decoration: none;
-  color: #47494a;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.shopping-cart {
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-nav a:hover {
-  color: #6C6E70;
-}
-
-/*.hamburger-menu {
-  font-size: 16px;
-  margin-top: 20px;
-  padding: 10px;
-}*/
-
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
-.fa-solid {
-  float: right;
-  margin-top: 40px;
-  margin-right: 20px;
-}
-
-.search-field {
-  display: none;
-}
-
-
-
-
-
-
-
 #body {
   margin-left: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-cart-header {
-  border-bottom: 1px solid #858484;
-  padding: 1rem 3rem;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-cart-link {
-  position: fixed;
-  top: 50px;
-  right: 10px;
-  padding: 1rem 3rem;
-  color: black;
-  background-color: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.cart-page {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.cart-items {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.cart-item {
-  max-width: 100%;
-}
-
 .left img{
   width: 70%;
-  height: 300px;
+  height: 210px;
   object-fit: contain;
   margin-left: 20px;
 }
 
 .product-name {
+  color: #216b7d;
+  text-align: left;
   margin-left: 20px;
 }
 
 .price {
   margin-left: 20px;
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 #totalPrice {
@@ -138,46 +28,5 @@ cart-link {
   margin-left: 20px;
 }
 
-@media (min-width:450px) {
 
-.left img{
-  width: 60%;
-  height: 300px;
-  object-fit: contain;
-  margin-left: 20px;
-}
-  
-.product-name {
-  margin-left: 40px;
-}
-  
-.price {
-  margin-left: 40px;
-}
-  
-.delete-btn {
-  margin-left: 40px;
-}
-
-}
-
-@media (min-width:600px) {
-
-.shopping-cart {
-  margin-top: -15px;
-}
-
-.product-name {
-  margin-left: 60px;
-}
-  
-.price {
-  margin-left: 60px;
-}
-  
-.delete-btn {
-  margin-left: 60px;
-}
-
-}
 
