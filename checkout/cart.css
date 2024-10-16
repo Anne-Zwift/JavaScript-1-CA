@@ -6,15 +6,7 @@
 
 .cart-header {
   border-bottom: 1px solid #858484;
-  padding-top: 20px;
   background-color: #ffffff;
-}
-
-.cart-link {
-  display: block;
-  width: fit-content;
-  background-color: rgb(31, 165, 80);
-  margin-bottom: 80px;
 }
 
 a.cart-link {
@@ -72,7 +64,7 @@ a.cart-link {
 
 .left img{
   width: 70%;
-  height: 300px;
+  height: 210px;
   object-fit: contain;
   margin-left: 20px;
 }
@@ -106,4 +98,93 @@ a.cart-link {
   border: none;
   outline: none;
   border-radius: 3px;
+}
+
+@media (min-width: 600px) {
+.product-name {
+  margin-left: 120px;
+}
+  
+.delete-btn {
+  margin-left: 120px;
+}
+  
+.price {
+  margin-left: 120px;
+}
+
+}
+
+@media (min-width: 800px) {
+
+.left img {
+  width: 70%;
+  height: 210px;
+  object-fit: contain;
+  margin-left: -60px;
+}
+
+}
+
+@media (min-width: 900px) {
+.product-name {
+  margin-left: 150px;
+}
+    
+.delete-btn {
+  margin-left: 150px;
+}
+    
+.price {
+  margin-left: 150px;
+}
+  
+}
+
+@media (min-width: 1000px) {
+
+.left img {
+  margin-left: -80px;
+}
+  
+}
+
+@media (min-width: 1100px) {
+
+.left img {
+  margin-left: -120px;
+}
+    
+}
+
+@media (min-width: 1200px) {
+
+.left img {
+  margin-left: -160px;
+}
+      
+}
+
+@media (min-width: 1300px) {
+
+.left img {
+  margin-left: -200px;
+}
+        
+}
+
+@media (min-width: 1600px) {
+
+.left img {
+  margin-left: -300px;
+}
+          
+}
+
+@media (min-width: 1900px) {
+
+.left img {
+  margin-left: -400px;
+}
+            
 }

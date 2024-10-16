@@ -5,7 +5,8 @@
 }
 
 .fa-cart-shopping{
-  margin-right: 325px;
+  display: block;
+  margin-right: 238px;
   margin-top: 0px;
 }
 
@@ -118,5 +119,121 @@
 .fa-magnifying-glass {
   display: block;
   margin-top: 10px;
-  margin-right: 140px;
+  margin-right: 40px;
+}
+
+@media (min-width: 375px) {
+
+.fa-cart-shopping{
+  margin-right: 328px;
+}
+
+.fa-magnifying-glass {
+  margin-right: 120px;
+}
+
+}
+
+@media (min-width: 400px) {
+
+.fa-cart-shopping{
+    margin-right: 348px;
+}
+  
+.fa-magnifying-glass {
+    margin-right: 150px;
+}
+  
+}
+
+@media (min-width: 400px) {
+
+.fa-cart-shopping{
+  margin-right: 400px;
+}
+    
+.fa-magnifying-glass {
+  margin-right: 200px;
+}
+    
+}
+
+@media (min-width: 600px) {
+    
+.fa-magnifying-glass {
+  margin-right: 360px;
+}
+
+}
+
+@media (min-width: 700px) {
+    
+.fa-magnifying-glass {
+  margin-right: 460px;
+}
+  
+}
+
+@media (min-width: 800px) {
+    
+.fa-magnifying-glass {
+  margin-right: 560px;
+}
+
+}
+
+@media (min-width: 900px) {
+    
+.fa-magnifying-glass {
+  margin-right: 660px;
+}
+  
+}
+
+@media (min-width: 1000px) {
+    
+.fa-magnifying-glass {
+  margin-right: 760px;
+}
+    
+}
+
+@media (min-width: 1100px) {
+    
+.fa-magnifying-glass {
+  margin-right: 860px;
+}
+      
+}
+
+@media (min-width: 1200px) {
+    
+.fa-magnifying-glass {
+  margin-right: 960px;
+}
+        
+}
+
+@media (min-width: 1300px) {
+    
+.fa-magnifying-glass {
+  margin-right: 1060px;
+}
+          
+}
+
+@media (min-width: 1600px) {
+    
+.fa-magnifying-glass {
+  margin-right: 1360px;
+}
+            
+}
+
+@media (min-width: 1900px) {
+    
+.fa-magnifying-glass {
+  margin-right: 1660px;
+}
+              
 }
