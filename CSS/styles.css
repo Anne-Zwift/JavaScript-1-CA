@@ -276,9 +276,6 @@ nav a {
 }
 
 @media (min-width: 800px) {
-header {
-    margin-top: -140px;
-}
 
 .logo-nav {
     block-size: 70px;
@@ -331,10 +328,4 @@ b {
     font-size: 16px;
 }
 
-}
-
-@media (min-width: 900px) {
-header {
-    margin-top: -140px;
-}
 }
