@@ -125,7 +125,7 @@
 @media (min-width: 375px) {
 
 .fa-cart-shopping{
-  margin-right: 328px;
+  margin-right: 320px;
 }
 
 .fa-magnifying-glass {
@@ -137,7 +137,7 @@
 @media (min-width: 400px) {
 
 .fa-cart-shopping{
-    margin-right: 348px;
+  margin-right: 348px;
 }
   
 .fa-magnifying-glass {
@@ -146,20 +146,20 @@
   
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
 
 .fa-cart-shopping{
   margin-right: 400px;
 }
-    
-.fa-magnifying-glass {
-  margin-right: 160px;
-}
-    
+      
 }
 
 @media (min-width: 600px) {
     
+.fa-cart-shopping{
+  margin-right: 50px;
+}
+
 .fa-magnifying-glass {
   margin-right: 360px;
 }
