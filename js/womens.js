@@ -1,7 +1,7 @@
 //fetching API Link: https://v2.api.noroff.dev/rainy-days
 const productsContainer = document.querySelector(".all-products");
 const spinner = document.querySelector("#loading");
-//console.log(productsContainer);//checking if I have the products-container
+
 const cartCount = document.querySelector("#cartCount");
 
 //initialize the cart array
@@ -9,7 +9,7 @@ const storedCartItems = JSON.parse(localStorage.getItem("cart"));
 //this gets the cart items in local storage and keeps it in the cart
 let cart = storedCartItems ? storedCartItems: [];
 cartCount.textContent = cart.length;
-//console.log(cart);
+
 
 const API_link = "https://v2.api.noroff.dev/rainy-days";
 
@@ -23,31 +23,28 @@ async function fetchData() {
         const response = await fetch(API_link);//fetching data and save it in a response
 
         if (!response.ok) {
-            //console.log("fetching problem");
+
         }
 
-        //console.log(response);//200 ok
+
         const data = await response.json();//convert it back to js and save it in to data
         
-        //display data
-        //console.log(data);//array 12 products
-        //console.log(data.data);//fetching the image pic link in item 1
+
         displayData(data.data.filter((item) => {return item.tags.includes("womens");}));
     
         //Add to cart functionality
         //select all Cart Buttons
         const addToCartBtns = document.querySelectorAll(".add-to-cart");
-        //console.log(addToCartBtns);//shows the NodeList of 12 buttons
+
         //loop thru the btns
         addToCartBtns.forEach((btn) => {
-           //console.log(btn);
+
             btn.addEventListener('click', (event) => {
                 const productId = event.target.dataset.id;
                 //tested if it was an Array (console.log(Array.isArray(data) is false, but data.data is true)
                 //use find method to find the specific item 
                 const product = Object.values(data.data).find((product) => product.id == productId);
-                //console.log(product);
-                //console.log(Array.isArray(data.data));
+
                 cart.push(product);
                 //update the cart count
                 cartCount.textContent = cart.length;
@@ -55,12 +52,12 @@ async function fetchData() {
                 localStorage.setItem("cart", JSON.stringify(cart));
                 //show notification
                 showNotification("Product Added to Cart");
-                //console.log(JSON.stringify(cart));
+
             });
         });
 
     } catch (error) {
-        //console.log(error);
+
     }
 }
 fetchData();

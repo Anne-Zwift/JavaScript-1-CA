@@ -2,7 +2,7 @@ const cartCount = document.querySelector("#cartCount");
 const storedCartItems = JSON.parse(localStorage.getItem('cart'));
 
 let cart = storedCartItems? storedCartItems: [];
-//console.log(cart);
+
 
 cartCount.textContent = cart.length;
 
@@ -41,10 +41,10 @@ displayCartItems(cart);
 
 //select deletebtns
 const deleteBtns = document.querySelectorAll(".delete-btn");
-//console.log(deleteBtns);
+
 deleteBtns.forEach((btn) => {
   btn.addEventListener("click", (event) => {
-    //console.log(event.target.dataset.id);
+
     const productId = event.target.dataset.id;
     //find the index (0,1,2...) gives back the index number
     const productIndex = cart.findIndex((cartItem) => cartItem.id == productId);
@@ -56,7 +56,7 @@ deleteBtns.forEach((btn) => {
     displayCartItems(cart);
     cartCount.textContent = cart.length;//makes the cart update at the same time as we push delete button
     showNotification("Product deleted")
-    console.log(cart);
+
   })
 });
 
@@ -77,5 +77,5 @@ let roundPrice = Math.round(totalPrice * 100) / 100;
   totalPrice += item.price;
   
 });
-//console.log('Total Price:', totalPrice);
+
 document.getElementById('totalPrice').textContent = 'Total Price: ' + totalPrice + ',-.';
