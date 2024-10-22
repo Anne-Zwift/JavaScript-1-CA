@@ -9,7 +9,7 @@ const storedCartItems = JSON.parse(localStorage.getItem("cart"));
 //this gets the cart items in local storage and keeps it in the cart
 let cart = storedCartItems ? storedCartItems: [];
 cartCount.textContent = cart.length;
-console.log(cart);
+//console.log(cart);
 
 const API_link = "https://v2.api.noroff.dev/rainy-days";
 
@@ -23,15 +23,15 @@ async function fetchData() {
         const response = await fetch(API_link);//fetching data and save it in a response
 
         if (!response.ok) {
-            console.log("fetching problem");
+            //console.log("fetching problem");
         }
 
-        console.log(response);//200 ok
+        //console.log(response);//200 ok
         const data = await response.json();//convert it back to js and save it in to data
         
         //display data
-        console.log(data);//array 12 products
-        console.log(data.data);//fetching the image pic link in item 1
+        //console.log(data);//array 12 products
+        //console.log(data.data);//fetching the image pic link in item 1
         displayData(data.data.filter((item) => {return item.tags.includes("mens");}));
     
         //Add to cart functionality
@@ -46,8 +46,8 @@ async function fetchData() {
                 //tested if it was an Array (console.log(Array.isArray(data) is false, but data.data is true)
                 //use find method to find the specific item 
                 const product = Object.values(data.data).find((product) => product.id == productId);
-                console.log(product);
-                console.log(Array.isArray(data.data));
+                //console.log(product);
+                //console.log(Array.isArray(data.data));
                 cart.push(product);
                 //update the cart count
                 cartCount.textContent = cart.length;
@@ -60,7 +60,7 @@ async function fetchData() {
         });
 
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 fetchData();

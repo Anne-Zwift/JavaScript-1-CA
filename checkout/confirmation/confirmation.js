@@ -77,5 +77,5 @@ let roundPrice = Math.round(totalPrice * 100) / 100;
   totalPrice += item.price;
   
 });
-console.log('Total Price:', totalPrice);
+//console.log('Total Price:', totalPrice);
 document.getElementById('totalPrice').textContent = 'Total Price: ' + totalPrice + ',-.';

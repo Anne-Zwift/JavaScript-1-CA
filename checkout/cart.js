@@ -60,7 +60,7 @@ deleteBtns.forEach((btn) => {
     displayCartItems(cart);
     cartCount.textContent = cart.length;//makes the cart update at the same time as we push delete button
     showNotification("Product deleted")
-    console.log(cart);
+    //console.log(cart);
   })
 });
 
@@ -81,5 +81,5 @@ let roundPrice = Math.round(totalPrice * 100) / 100;
   totalPrice += item.price;
   
 });
-console.log('Total Price:', totalPrice);
+//console.log('Total Price:', totalPrice);
 document.getElementById('totalPrice').textContent = 'Total Price: ' + totalPrice + ',-.';

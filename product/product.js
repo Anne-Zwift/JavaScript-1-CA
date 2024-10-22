@@ -3,7 +3,7 @@ const spinner = document.querySelector("#loading");
 
 //display data: set up HTML skeleton for displaying data
 const singleProductsContainer = document.querySelector("#single-products-container");
-console.log(singleProductsContainer);//checking if I have the products-container
+//console.log(singleProductsContainer);//checking if I have the products-container
 
 
 //fetching the API all product link
@@ -25,9 +25,9 @@ async function fetchDataSingleProduct() {
          //fetching the data
         //const productId = new URLSearchParams(window.location.search).get("id");//fetching the web browser id not in use
         const response = await fetch(API_Single_Product);//(specifics: I need to use id after rainy-days, I can then fetch every viewed jacket
-        console.log(response);//status 200/ok
+        //console.log(response);//status 200/ok
         const data = await response.json();//convert it back to js and save it in to data
-        console.log(data);//fetching a single jacket
+        //console.log(data);//fetching a single jacket
 
         if (!response.ok) {
             console.log("something went wrong");
@@ -35,7 +35,7 @@ async function fetchDataSingleProduct() {
 
         //display data
         displayData(data.data);
-        console.log(data.data);
+        //console.log(data.data);
         
         
         

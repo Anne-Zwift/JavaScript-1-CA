@@ -5,7 +5,7 @@ const input = document.querySelector("#input");//grab the element
 const getData = async() => {
   //response
   const res = await fetch(API_link);//getting the endpoint url
-  console.log(res);//response object 200/ok
+  //console.log(res);//response object 200/ok
 
   if (!res.ok) {
     throw new Error(`HTTP error! status: ${res.status}`);
@@ -13,7 +13,7 @@ const getData = async() => {
   }
 
   const data = await res.json();//using json method to get the array data objects
-  console.log('API Response:', data.data);
+  //console.log('API Response:', data.data);
   return data;
 
 }
@@ -23,10 +23,10 @@ getData();
 const displaySearch = async () => {
   try {
   let query = input.value.toLowerCase().trim();//store the search results
-  console.log("Query::", query);
+  //console.log("Query::", query);
 
   const data = await getData();
-  console.log('API Response:', data.data);
+  //console.log('API Response:', data.data);
 
 let dataFilter = data.data.filter((data) => {
   if (!query) {
@@ -68,7 +68,7 @@ let dataFilter = data.data.filter((data) => {
     `;
   }).join("");//to fix the , between elements use .join("")
       //insert dat to DOM
-      console.log('Filtered HTML:', dataHtml);
+      //console.log('Filtered HTML:', dataHtml);
       display.innerHTML = dataHtml;    
 }
   }catch (error) {
