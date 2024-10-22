@@ -45,6 +45,10 @@ const deleteBtns = document.querySelectorAll(".delete-btn");
 deleteBtns.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     //console.log(event.target.dataset.id);
+    const confirmed = confirm('Are you sure you want to delete this item?');
+    if (!confirmed) {
+      return;
+    }
     const productId = event.target.dataset.id;
     //find the index (0,1,2...) gives back the index number
     const productIndex = cart.findIndex((cartItem) => cartItem.id == productId);
