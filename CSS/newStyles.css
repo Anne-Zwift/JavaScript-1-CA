@@ -61,6 +61,7 @@
   border: 3px solid #216b7d;
   border-radius: 50%;
   border-top-color: #fff;
+  margin-left: 100px;
   animation: spin 1s ease-in-out infinite;
 }
 

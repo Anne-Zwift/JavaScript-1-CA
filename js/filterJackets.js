@@ -23,8 +23,11 @@ getData();
 const displaySearch = async () => {
   try {
   let query = input.value.toLowerCase().trim();//store the search results
-
-
+    if (query.length < 3) {
+      display.innerHTML = '<p class="message">Please enter at least 3 characters to search</p>';
+      return;
+    }
+  
   const data = await getData();
 
 
