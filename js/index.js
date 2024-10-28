@@ -23,7 +23,7 @@ async function fetchData() {
         const response = await fetch(API_link);//fetching data and save it in a response
 
         if (!response.ok) {
-
+            throw new Error("Network response was not ok");
         }
 
 
