@@ -86,5 +86,13 @@ function displayData(data) {
     
 }
 
+function showNotification(message) {
+  const note = document.querySelector(".note");
+  note.textContent = message;
+  note.style.left = "10px";
+  setTimeout(() => {
+      note.style.left = "-300px";
+  }, 3000)
+}
 
 
