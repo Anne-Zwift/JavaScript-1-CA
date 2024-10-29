@@ -5,6 +5,26 @@
 }
 
 .text-container {
-  color: blueviolet;
-  margin-bottom: 600px;
+  color: #000;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.terms-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  margin-bottom: 10px;
+}
+
+btn {
+  color: #216b7d;
+  background-color: #ccc;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border: none;
 }

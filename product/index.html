@@ -7,6 +7,8 @@
   <title>Rainydays jacket | Jacket-Specific</title>
   <link rel="stylesheet" href="/css/product.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/newstyles.css">
+  <link rel="stylesheet" href="/css/home.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -18,6 +20,29 @@
   <script src="/js/product.js" defer></script>
 </head>
   <body>
+    <header class="header">
+      <a href="/index.html">
+      <img src="../Images/Img-logo.png" alt="logo of Rainydays with the text pushing the comfort zone" class="logo-nav"></a>
+      <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
+      <label for="hamburger-menu" class="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+      <!--selecting products by gender-->
+    <nav>
+      <a href="/womens.html" class="female-btn" id="female-btn">Women's</a>
+      <a href="/mens.html" class="male-btn" id="male-btn">Men's</a>
+      <!--my cart-->
+      <a href="/checkout/cart.html" class="cart-link">(<i class="fa-solid fa-cart-shopping"></i><span id="cartCount"></span>)</a>
+    </nav> 
+    </header>
+        <section class="background-picture-mountain">
+          <div class="container-align-text">
+            <div class="slogan">
+              <h1 class="slogan">Pushing the Comfort Zone</h1>
+              <h2>Plan your next adventure with RAINYDAYS</h2>
+            </div>
+          <a href="/newproducts.html" title="this is a link to the site for new arrivals" class="cta-button">Shop New Arrivals</a>
+          </div>
+        </section>
+        <div class="note">The message will be here</div>
     <div class="continue-shopping">
       <a href="/index.html">Continue Shopping</a>
     </div>
@@ -58,7 +83,7 @@
       <aside>
       <div class="caption">     
         <a href="#" title="privacy policy site">Privacy Policy</a>
-        <a href="#" title="terms & conditions site">Terms & Conditions</a>
+        <a href="/termsandconditions.html" title="terms & conditions site">Terms & Conditions</a>
         <a href="#" title="contact us site">Contact Us</a>
         <a href="#" title="products women">Our products</a>
       </div>
