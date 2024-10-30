@@ -57,7 +57,7 @@ async function fetchData() {
         });
 
     } catch (error) {
-
+    console.error('Error fetching single product:', error);
     }
 }
 fetchData();

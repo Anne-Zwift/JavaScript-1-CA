@@ -40,11 +40,20 @@ async function fetchDataSingleProduct() {
         
       //loop thru the btns
       addToCartBtns.forEach((btn) => {
+        
         btn.addEventListener('click', (event) => {
           const productId = event.target.dataset.id;
           const product = data;//since selecting a single product
-
-          cart.push(product);
+          const cartItem = {
+            id: product.Id,
+            title: product.title,
+            price: product.price,
+            image: product.image,
+            description: product.description,
+            sizes: product.sizes,
+            gender: product.gender
+          };
+          cart.push(cartItem);
           //update the cart count
           cartCount.textContent = cart.length;
           //add items to the local storage
@@ -83,7 +92,7 @@ function displayData(data) {
   </div>
    
         `;
-    
+
 }
 
 function showNotification(message) {
