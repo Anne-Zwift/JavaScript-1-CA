@@ -70,7 +70,7 @@ let dataFilter = data.data.filter((data) => {
     </div>
     `;
   }).join("");//to fix the , between elements use .join("")
-      //insert dat to DOM
+      //insert data to DOM
 
       display.innerHTML = dataHtml;    
 }

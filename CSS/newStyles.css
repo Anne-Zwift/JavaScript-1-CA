@@ -20,6 +20,7 @@
 .all-products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -106,6 +107,7 @@
 }
 
 /*filter search, list of jackets page*/
+
 .input {
   background-color: #f6e0ac;
   margin-left: 20px;

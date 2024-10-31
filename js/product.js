@@ -43,9 +43,10 @@ async function fetchDataSingleProduct() {
         
         btn.addEventListener('click', (event) => {
           const productId = event.target.dataset.id;
-          const product = data;//since selecting a single product
+          const product = data.data;//since selecting a single product
+  
           const cartItem = {
-            id: product.Id,
+            id: product.id,
             title: product.title,
             price: product.price,
             image: product.image,
@@ -53,11 +54,14 @@ async function fetchDataSingleProduct() {
             sizes: product.sizes,
             gender: product.gender
           };
+
+
           cart.push(cartItem);
           //update the cart count
           cartCount.textContent = cart.length;
           //add items to the local storage
           localStorage.setItem("cart", JSON.stringify(cart));
+          console.log('cart saved to local storage:', JSON.parse(localStorage.getItem("cart")));
           //show notification
           showNotification("Product Added to Cart");
       });
