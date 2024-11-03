@@ -101,7 +101,7 @@
   left: -300px;
   background-color: #1bd8cf;
   border-radius: 5px;
-  padding: 1rem 1rem;
+  padding: 1rem;
   max-width: 60%;
   transition: all 0.5s ease-in-out;
 }
