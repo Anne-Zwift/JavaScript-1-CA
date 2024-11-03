@@ -36,24 +36,17 @@ async function fetchDataSingleProduct() {
 
       //Add to cart functionality
       //select cart Button
-      const addToCartBtns = document.querySelectorAll(".add-to-cart");
-        
-      //loop thru the btns
-      addToCartBtns.forEach((btn) => {
-        
-        btn.addEventListener('click', (event) => {
-          const productId = event.target.dataset.id;
-          const product = data.data;//since selecting a single product
-  
-          const cartItem = {
-            id: product.id,
-            title: product.title,
-            price: product.price,
-            image: product.image,
-            description: product.description,
-            sizes: product.sizes,
-            gender: product.gender
-          };
+      const addToCartBtn = document.querySelector(".add-to-cart");
+      addToCartBtn.addEventListener('click', () => {
+        const cartItem = {
+          id: data.data.id,
+          title: data.data.title,
+          price: data.data.price,
+          image: data.data.image,
+          description: data.data.description,
+          sizes: data.data.sizes,
+          gender: data.data.gender
+        };
 
 
           cart.push(cartItem);
@@ -65,7 +58,6 @@ async function fetchDataSingleProduct() {
           //show notification
           showNotification("Product Added to Cart");
       });
-  });
       
     } catch (error) {
       console.error('Error fetching single product:', error);
