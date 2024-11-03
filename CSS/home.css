@@ -50,7 +50,7 @@
 }
 
 /*picture of people in the mountain*/
-.flex-container-div2 {
+/*.flex-container-div2 {
     background-image: url("../Images/img-peoplewalkinginmountain.png");
     background-repeat: no-repeat;
     width: 160px;
@@ -59,7 +59,7 @@
     padding: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
-}
+}*/
 
 .logo-cta-button {
     background-color: #0a3641;

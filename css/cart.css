@@ -57,7 +57,7 @@ a.cart-link {
   left: -300px;
   background-color: rgb(249, 187, 187);
   border-radius: 5px;
-  padding: 1rem;
+  padding: 3rem 3rem;
   max-width: 60%;
   transition: all 0.5s ease-in-out;
 }
