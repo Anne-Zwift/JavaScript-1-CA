@@ -97,11 +97,11 @@
 .note {
   position: fixed;
   margin: auto;
-  top: 100px;
+  top: 130px;
   left: -300px;
   background-color: #1bd8cf;
   border-radius: 5px;
-  padding: 3rem 3rem;
+  padding: 1rem 1rem;
   max-width: 60%;
   transition: all 0.5s ease-in-out;
 }
@@ -116,7 +116,7 @@
 
 .message {
   color: red;
-  margin-left: 20px;
+  margin-left: -20px;
 }
 
 .fa-magnifying-glass {
@@ -178,7 +178,7 @@
 }
 
 @media (min-width: 800px) {
-    
+
 .fa-magnifying-glass {
   margin-right: 560px;
 }

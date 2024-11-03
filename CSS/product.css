@@ -2,7 +2,7 @@
   margin-top: 40px;
 }
 
-.continue-shopping a{
+.continue-shopping a {
   display: flex;
   max-width: 150px;
   color: #216b7d;
@@ -10,6 +10,13 @@
   text-decoration: none;
   padding: 10px;
   margin-left: 10px;
+}
+
+.single-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .product {
@@ -34,7 +41,7 @@
   margin-top: 30px;
 }
 
-.product-image img{
+.product-image img {
   max-width: 100%;
   max-height: 210px;
 }
@@ -55,12 +62,12 @@
 
 @keyframes spin {
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
