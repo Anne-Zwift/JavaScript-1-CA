@@ -87,9 +87,10 @@ function displayData(data) {
     });
 }
 
-function showNotification(message) {
+function showNotification(message, type = "success") {
     const note = document.querySelector(".note");
     note.textContent = message;
+    note.style.backgroundColor = type === "error" ? "#ff4d4d" : "#4caf50";
     note.style.left = "10px";
     setTimeout(() => {
         note.style.left = "-300px";
