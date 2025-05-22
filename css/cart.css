@@ -22,6 +22,7 @@ a.cart-link {
   margin-left: 20px;
   margin-bottom: 40px;
   padding: 10px;
+  border-radius: 6px;
 }
 
 .cart-page {
@@ -97,6 +98,7 @@ a.cart-link {
   margin-left: 20px;
   margin-bottom: 40px;
   padding: 8px 25px;
+  border-radius: 6px;
 }
 
 @media (min-width: 600px) {
