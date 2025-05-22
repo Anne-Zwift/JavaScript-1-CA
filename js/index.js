@@ -66,11 +66,14 @@ async function fetchData() {
 fetchData();
 
 function displayData(data) {
-    if (!data.length) {
+    if (!data || !Array.isArray(data) || !data.length === 0) {
         showNotification("No products found. Please try again later.");
         return;
     }
+
+    productsContainer.innerHTML = ""; //clear previous content
     data.forEach((product) => {
+        const productImage = product.image?.url || "fallback-image.jpg";
         const productTemplate = `
     
     <div class="all-products">
@@ -78,7 +81,7 @@ function displayData(data) {
   <div id="loading"></div>
   <div class="product">
   <div class="product-image">
-    <img src="${product.image.url}" alt="">
+    <img src="${productImage}" alt="">
   </div>
     <p class="product-name">${product.title}</p>
     <div class="detail">
