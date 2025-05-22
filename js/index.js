@@ -23,13 +23,15 @@ async function fetchData() {
         const response = await fetch(API_link);//fetching data and save it in a response
 
         if (!response.ok) {
-            throw new Error("Network response was not ok");
+            throw new Error(`Error ${response.status}: ${response.statusText}`);
         }
 
 
         const data = await response.json();//convert it back to js and save it in to data
 
         displayData(data.data);
+        
+        
     
         //Add to cart functionality
         //select all Cart Buttons
@@ -50,18 +52,24 @@ async function fetchData() {
                 //add items to the local storage
                 localStorage.setItem("cart", JSON.stringify(cart));
                 //show notification
-                showNotification("Product Added to Cart");
+                showNotification("Product Added to Cart!");
 
             });
         });
 
     } catch (error) {
-
+        showNotification(`Failed to load products: ${error.message}`);
+    } finally {
+        spinner.style.display = "none";
     }
 }
 fetchData();
 
 function displayData(data) {
+    if (!data.length) {
+        showNotification("No products found. Please try again later.");
+        return;
+    }
     data.forEach((product) => {
         const productTemplate = `
     
